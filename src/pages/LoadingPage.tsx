@@ -7,7 +7,7 @@ import topBanner from "../assets/header.png";
 import ScrollingBanner from "../components/ScrollingBanner";
 import bottomBanner from "../assets/footer.png";
 import GrowingTreeLoading from "../components/GrowingTreeLoading";
-import { postToGas } from "../config";
+import { postToGas, clearToken } from "../config";
 
 const STORAGE_KEY = "visionBoardFormData";
 const RESULT_IMAGE_KEY = "visionBoardGeneratedImageUrl";
@@ -26,11 +26,16 @@ const removeEmptyFields = (obj: AnyObject): AnyObject => {
   );
 };
 
+// 画面の状態。loading=生成中 / error=失敗（再試行ボタンを出す）
+type ViewState = "loading" | "error";
+
 const LoadingPage: React.FC = () => {
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
   const [loadingTextIndex, setLoadingTextIndex] = useState(0);
-  const hasStartedRef = useRef(false);
+  const [view, setView] = useState<ViewState>("loading");
+  const [errorMessage, setErrorMessage] = useState("");
+  const isRunningRef = useRef(false);
 
   useEffect(() => {
     const savedLanguage = localStorage.getItem("selectedLanguage") || "ja";
@@ -52,59 +57,79 @@ const LoadingPage: React.FC = () => {
     return () => clearInterval(interval);
   }, [t, i18n.language]);
 
-  useEffect(() => {
-    if (hasStartedRef.current) return;
-    hasStartedRef.current = true;
+  // 画像生成の本体。成功したら結果画面へ、失敗したらエラー表示（再試行ボタン）へ。
+  // 入力は Step1〜4 のデータなので、失敗しても Step に戻さず、ここからやり直せる。
+  const generate = async () => {
+    if (isRunningRef.current) return;
+    isRunningRef.current = true;
+    setView("loading");
 
-    const run = async () => {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      const selectedLanguage = localStorage.getItem("selectedLanguage") || "ja";
+    const saved = localStorage.getItem(STORAGE_KEY);
+    const selectedLanguage = localStorage.getItem("selectedLanguage") || "ja";
 
-      if (!saved) {
-        alert(t("loadingPage.errors.missingData"));
-        navigate("/form/step1");
+    if (!saved) {
+      alert(t("loadingPage.errors.missingData"));
+      navigate("/form/step1");
+      return;
+    }
+
+    try {
+      const formData = JSON.parse(saved);
+
+      // 回答データをそのまま新バックエンド(GAS)へ送る。
+      // 指示文の組み立て・Drive保存・スプレッドシート記録はすべてGAS側で行う。
+      // トークンは config.postToGas が自動で添える。
+      const payload = removeEmptyFields({
+        ...formData,
+        lang: selectedLanguage,
+      });
+
+      const data = await postToGas(payload);
+
+      // 認証切れ：パスコードから入り直してもらう。
+      if (data && data.code === "auth") {
+        clearToken();
+        alert(t("loadingPage.errors.sessionExpired", "認証の有効期限が切れました。もう一度パスコードを入力してください。"));
+        navigate("/");
         return;
       }
 
-      try {
-        const formData = JSON.parse(saved);
-
-        // 回答データをそのまま新バックエンド(GAS)へ送る。
-        // 指示文の組み立て・Drive保存・スプレッドシート記録はすべてGAS側で行う。
-        const payload = removeEmptyFields({
-          ...formData,
-          lang: selectedLanguage,
-        });
-
-        const data = await postToGas(payload);
-
-        if (data.status !== "success" || !data.imageUrl) {
-          throw new Error(
-            data.message || t("loadingPage.errors.imageGenerationFailed")
-          );
-        }
-
-        const imageUrl = data.imageUrl;
-        const driveUrl = data.drivePageUrl ?? "";
-
-        try {
-          localStorage.setItem(RESULT_IMAGE_KEY, imageUrl);
-          localStorage.setItem(RESULT_DRIVE_URL_KEY, driveUrl);
-        } catch (e) {
-          console.warn("localStorage save skipped:", e);
-        }
-
-        navigate("/result");
-      } catch (error) {
-        console.error(error);
-        hasStartedRef.current = false;
-        alert(t("loadingPage.errors.generationFailed"));
-        navigate("/form/step1");
+      if (data.status !== "success" || !data.imageUrl) {
+        throw new Error(
+          data.message || t("loadingPage.errors.imageGenerationFailed")
+        );
       }
-    };
 
-    run();
-  }, [navigate, t]);
+      const imageUrl = data.imageUrl;
+      const driveUrl = data.drivePageUrl ?? "";
+
+      try {
+        localStorage.setItem(RESULT_IMAGE_KEY, imageUrl);
+        localStorage.setItem(RESULT_DRIVE_URL_KEY, driveUrl);
+      } catch (e) {
+        console.warn("localStorage save skipped:", e);
+      }
+
+      navigate("/result");
+    } catch (error) {
+      console.error(error);
+      isRunningRef.current = false;
+      setErrorMessage(t("loadingPage.errors.generationFailed"));
+      setView("error");
+    }
+  };
+
+  // 再試行ボタン。入力はそのままなので、もう一度だけ生成を走らせる。
+  const handleRetry = () => {
+    isRunningRef.current = false;
+    generate();
+  };
+
+  useEffect(() => {
+    generate();
+    // 初回のみ実行（generateは都度生成されるため依存に入れない）
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const messages = t("loadingPage.messages", {
     returnObjects: true,
@@ -114,10 +139,44 @@ const LoadingPage: React.FC = () => {
     <div style={{ textAlign: "center" }}>
       <ScrollingBanner src={topBanner} direction="left" />
 
-      <h2>{t("loadingPage.title")}</h2>
-      <GrowingTreeLoading lang={i18n.language} />
-
-      <p>{messages[loadingTextIndex]}</p>
+      {view === "loading" ? (
+        <>
+          <h2>{t("loadingPage.title")}</h2>
+          <GrowingTreeLoading lang={i18n.language} />
+          <p>{messages[loadingTextIndex]}</p>
+        </>
+      ) : (
+        <div
+          style={{
+            maxWidth: "520px",
+            margin: "40px auto",
+            padding: "0 20px",
+          }}
+        >
+          <p style={{ fontSize: "1.1rem", fontWeight: 700, marginBottom: "24px" }}>
+            {errorMessage}
+          </p>
+          <button
+            type="button"
+            onClick={handleRetry}
+            style={{
+              width: "100%",
+              maxWidth: "300px",
+              padding: "15px 18px",
+              borderRadius: "999px",
+              border: "none",
+              background: "linear-gradient(135deg, #6eb6e8 0%, #47d3b1 100%)",
+              color: "#ffffff",
+              fontSize: "1.05rem",
+              fontWeight: 900,
+              cursor: "pointer",
+              boxShadow: "0 8px 20px rgba(52, 150, 135, 0.22)",
+            }}
+          >
+            {t("loadingPage.retry", "もう一度ためす")}
+          </button>
+        </div>
+      )}
 
       <ScrollingBanner src={bottomBanner} direction="right" />
     </div>

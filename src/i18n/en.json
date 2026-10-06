@@ -198,8 +198,10 @@
       "missingData": "Input data was not found.",
       "imageGenerationFailed": "Image generation failed.",
       "dbSaveFailed": "Database save failed: {{message}}",
-      "generationFailed": "Generation failed. Please try again."
-    }
+      "generationFailed": "Generation failed. Please try again.",
+      "sessionExpired": "Your session has expired. Please enter the passcode again."
+    },
+    "retry": "Try again"
   },
   "result": {
     "label": "RESULT",

@@ -198,8 +198,10 @@
       "missingData": "入力データが見つかりませんでした。",
       "imageGenerationFailed": "画像生成に失敗しました。",
       "dbSaveFailed": "DB保存に失敗しました：{{message}}",
-      "generationFailed": "生成に失敗しました。もう一度お試しください。"
-    }
+      "generationFailed": "生成に失敗しました。もう一度お試しください。",
+      "sessionExpired": "認証の有効期限が切れました。もう一度パスコードを入力してください。"
+    },
+    "retry": "もう一度ためす"
   },
   "result": {
     "label": "RESULT",

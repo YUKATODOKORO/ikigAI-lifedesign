@@ -164,7 +164,11 @@
       "Membuat masa depan Anda...",
       "Menyusun visi Anda...",
       "Hampir selesai..."
-    ]
+    ],
+    "errors": {
+      "sessionExpired": "Sesi Anda telah berakhir. Silakan masukkan kode akses lagi."
+    },
+    "retry": "Coba lagi"
   },
   "result": {
     "label": "HASIL",

@@ -6,7 +6,6 @@
     "topBannerAlt": "うえのがぞう",
     "bottomBannerAlt": "したのがぞう"
   },
-
   "login": {
     "label": "ぱすこーど",
     "title": "ぱすこーどをいれてね",
@@ -19,7 +18,6 @@
       "wrongPasscode": "ぱすこーどがちがいます。"
     }
   },
-
   "form": {
     "step1": {
       "stepLabel": "すてっぷ 1",
@@ -44,7 +42,6 @@
       "charmPoints": "いいところ",
       "charmPointsPlaceholder": "れい：えがお、めがきれい"
     },
-
     "step2": {
       "stepLabel": "すてっぷ 2",
       "title": "すきなかんじ",
@@ -62,7 +59,6 @@
         "anime": "あにめ"
       }
     },
-
     "step3": {
       "stepLabel": "すてっぷ 3",
       "title": "あなたとみらい",
@@ -73,13 +69,11 @@
       "idealVision": "これからどうなりたい？",
       "idealVisionPlaceholder": "れい：たのしくくらしたい"
     },
-
     "step4": {
       "stepLabel": "すてっぷ 4",
       "title": "もっとくわしく",
       "lifeDesignTitle": "らいふでざいん",
       "description": "にんいです。かきたいところだけでいいよ。",
-      
       "identity": {
         "title": "あなたのこと",
         "helper": "かきたいときだけでいいよ",
@@ -88,7 +82,6 @@
         "strengths": "とくいなこと",
         "strengthsPlaceholder": "れい：やさしい、がんばれる"
       },
-
       "learn": {
         "title": "まなび",
         "helper": "まなびたいこと",
@@ -99,7 +92,6 @@
         "whenWhere": "いつどこで？",
         "whenWherePlaceholder": "れい：おうち"
       },
-
       "work": {
         "title": "しごと",
         "helper": "どんなしごとがいい？",
@@ -110,7 +102,6 @@
         "incomePlace": "おかねやばしょ",
         "incomePlacePlaceholder": "れい：おうちで"
       },
-
       "residence": {
         "title": "くらし",
         "helper": "どこにすみたい？",
@@ -119,7 +110,6 @@
         "environment": "おうち",
         "environmentPlaceholder": "れい：ひろい"
       },
-
       "marriage": {
         "title": "ぱーとなー",
         "helper": "どんなかんけい？",
@@ -128,7 +118,6 @@
         "thoughts": "けっこんについて",
         "thoughtsPlaceholder": "れい：したい"
       },
-
       "child": {
         "title": "こども",
         "helper": "こどものこと",
@@ -137,7 +126,6 @@
         "values": "たいせつなこと",
         "valuesPlaceholder": "れい：やさしさ"
       },
-
       "oldAge": {
         "title": "みらい",
         "helper": "さきのこと",
@@ -146,7 +134,6 @@
         "preparation": "じゅんび",
         "preparationPlaceholder": "れい：けんこう"
       },
-
       "nextAction": {
         "title": "つぎにすること",
         "helper": "ちいさな1ぽ",
@@ -154,7 +141,6 @@
         "actionPlaceholder": "れい：しらべる"
       }
     },
-
     "step5": {
       "stepLabel": "すてっぷ 5",
       "title": "かくにん",
@@ -201,7 +187,6 @@
       }
     }
   },
-
   "loadingPage": {
     "title": "つくっています...",
     "messages": [
@@ -213,10 +198,11 @@
       "missingData": "でーたがありません。",
       "imageGenerationFailed": "つくれませんでした。",
       "dbSaveFailed": "ほぞんできませんでした",
-      "generationFailed": "しっぱいしました。"
-    }
+      "generationFailed": "しっぱいしました。",
+      "sessionExpired": "にんしょうの ゆうこうきげんが きれました。もういちど ぱすこーどを いれてください。"
+    },
+    "retry": "もういちど ためす"
   },
-
   "result": {
     "label": "けっか",
     "title": "できました！",
@@ -257,7 +243,6 @@
       }
     }
   },
-
   "language": {
     "title": "ことばをえらんでね",
     "description": "つかいたいことばをえらんでください。",

@@ -198,8 +198,10 @@
       "missingData": "Die Eingabedaten wurden nicht gefunden.",
       "imageGenerationFailed": "Die Bildgenerierung ist fehlgeschlagen.",
       "dbSaveFailed": "Speichern in der Datenbank fehlgeschlagen: {{message}}",
-      "generationFailed": "Generierung fehlgeschlagen. Bitte versuche es erneut."
-    }
+      "generationFailed": "Generierung fehlgeschlagen. Bitte versuche es erneut.",
+      "sessionExpired": "Ihre Sitzung ist abgelaufen. Bitte geben Sie den Zugangscode erneut ein."
+    },
+    "retry": "Erneut versuchen"
   },
   "result": {
     "label": "ERGEBNIS",

@@ -164,7 +164,11 @@
       "Creando tu futuro...",
       "Construyendo tu visión...",
       "Casi listo..."
-    ]
+    ],
+    "errors": {
+      "sessionExpired": "Tu sesión expiró. Vuelve a ingresar el código de acceso."
+    },
+    "retry": "Intentar de nuevo"
   },
   "result": {
     "label": "RESULTADO",

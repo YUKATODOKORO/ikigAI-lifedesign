@@ -7,7 +7,7 @@ import topBanner from "../assets/header.png";
 import ScrollingBanner from "../components/ScrollingBanner";
 import bottomBanner from "../assets/footer.png";
 import { theme } from "../theme";
-import { postToGas } from "../config";
+import { postToGas, setToken } from "../config";
 
 const STORAGE_KEY = "visionBoardFormData";
 
@@ -37,6 +37,8 @@ const LoginPage: React.FC = () => {
         alert(t("login.errors.wrongPasscode"));
         return;
       }
+      // 認証成功。以降の通信で使う使い捨てトークンを保存しておく（パスコード再入力は不要になる）。
+      if (data.token) setToken(data.token);
     } catch (e) {
       alert(t("login.errors.wrongPasscode"));
       return;
