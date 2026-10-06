@@ -1,0 +1,198 @@
+{
+  "common": {
+    "back": "Volver",
+    "next": "Continuar",
+    "optional": "Opcional",
+    "topBannerAlt": "Banner superior",
+    "bottomBannerAlt": "Banner inferior"
+  },
+  "login": {
+    "label": "CÓDIGO",
+    "title": "Introduce el código",
+    "description": "Introduce el código para empezar.",
+    "passwordLabel": "Código",
+    "passwordPlaceholder": "Introduce el código",
+    "continue": "Continuar",
+    "errors": {
+      "missingPasscode": "No se ha encontrado la configuración del código. Comprueba REACT_APP_PASSCODE.",
+      "wrongPasscode": "El código no es correcto."
+    }
+  },
+  "form": {
+    "step1": {
+      "stepLabel": "PASO 1 / 4",
+      "title": "Sobre ti",
+      "description": "Introduce la información básica que aparecerá en tu vision board.",
+      "fullName": "Nombre",
+      "fullNamePlaceholder": "ej: Hanako Yamada",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "ikigai@gmail.com",
+      "age": "Edad",
+      "agePlaceholder": "ej: 25",
+      "gender": "Género",
+      "genderOptions": {
+        "select": "Selecciona",
+        "male": "Masculino",
+        "female": "Femenino",
+        "nonBinary": "No binario",
+        "preferNotToSay": "Prefiero no decirlo"
+      },
+      "hairAppearance": "Cabello / aspecto",
+      "hairAppearancePlaceholder": "ej: pelo largo negro, rizado, alto",
+      "charmPoints": "Rasgos / puntos fuertes",
+      "charmPointsPlaceholder": "ej: sonrisa, hoyuelos, ojos grandes"
+    },
+    "step2": {
+      "stepLabel": "PASO 2 / 4",
+      "title": "Tu estilo favorito",
+      "description": "Elegir colores y estilo visual ayuda a crear algo que encaje contigo.",
+      "favoriteColors": "Colores favoritos (máx. 3)",
+      "favoriteColorsPlaceholder": "ej: rosa, azul claro, blanco",
+      "imageStyle": "Estilo de imagen",
+      "recommended": "Recomendado",
+      "imageStyleOptions": {
+        "watercolor": "Acuarela",
+        "graphicRecording": "Estilo gráfico",
+        "realistic": "Realista",
+        "artistic": "Artístico",
+        "comic": "Cómic",
+        "anime": "Anime"
+      }
+    },
+    "step3": {
+      "stepLabel": "PASO 3 / 5",
+      "title": "Tú y tu futuro",
+      "description": "Cuéntanos quién eres y el futuro que quieres construir.",
+      "selfExpression": "Sobre ti",
+      "selfExpressionHelper": "Escribe lo que te gusta, tu personalidad y tus valores.",
+      "selfExpressionPlaceholder": "ej: me gusta la naturaleza, soy curioso, me gusta crear",
+      "idealVision": "Tu futuro ideal",
+      "idealVisionPlaceholder": "ej: trabajar en Tokio, tener un estudio cerca de la naturaleza"
+    },
+    "step4": {
+      "stepLabel": "PASO 4 / 5",
+      "title": "Profundizar",
+      "lifeDesignTitle": "Diseño de vida",
+      "description": "Opcional. Completa solo lo que quieras detallar.",
+      "identity": {
+        "title": "Tú",
+        "helper": "Para hacerlo más personal.",
+        "happyMoment": "Momento feliz reciente",
+        "happyMomentPlaceholder": "ej: viaje con amigos",
+        "strengths": "Fortalezas",
+        "strengthsPlaceholder": "ej: constancia, empatía"
+      },
+      "learn": {
+        "title": "Aprendizaje",
+        "helper": "Qué quieres aprender.",
+        "want": "¿Qué quieres aprender?",
+        "wantPlaceholder": "ej: inglés, diseño",
+        "reason": "¿Por qué?",
+        "reasonPlaceholder": "ej: carrera, afición",
+        "whenWhere": "¿Cuándo y dónde?",
+        "whenWherePlaceholder": "ej: online"
+      },
+      "work": {
+        "title": "Trabajo",
+        "helper": "Tu trabajo ideal.",
+        "style": "¿Qué tipo de trabajo quieres?",
+        "stylePlaceholder": "ej: freelance",
+        "values": "¿Qué es importante?",
+        "valuesPlaceholder": "ej: libertad",
+        "incomePlace": "Ingresos / lugar",
+        "incomePlacePlaceholder": "ej: trabajo remoto"
+      },
+      "residence": {
+        "title": "Vida",
+        "helper": "Dónde quieres vivir.",
+        "place": "Lugar",
+        "placePlaceholder": "ej: ciudad",
+        "environment": "Entorno",
+        "environmentPlaceholder": "ej: naturaleza"
+      },
+      "marriage": {
+        "title": "Relación",
+        "helper": "Tu relación ideal.",
+        "idealRelation": "Relación ideal",
+        "idealRelationPlaceholder": "ej: apoyo mutuo",
+        "thoughts": "Sobre el matrimonio",
+        "thoughtsPlaceholder": "ej: quiero casarme"
+      },
+      "child": {
+        "title": "Hijos",
+        "helper": "Sobre los hijos.",
+        "thoughts": "¿Qué opinas?",
+        "thoughtsPlaceholder": "ej: quiero hijos",
+        "values": "Valores",
+        "valuesPlaceholder": "ej: libertad"
+      },
+      "oldAge": {
+        "title": "Futuro",
+        "helper": "Tu vida futura.",
+        "ideal": "Ideal",
+        "idealPlaceholder": "ej: vida tranquila",
+        "preparation": "Preparación",
+        "preparationPlaceholder": "ej: ahorro"
+      },
+      "nextAction": {
+        "title": "Siguiente paso",
+        "helper": "Pequeña acción del mes.",
+        "action": "¿Qué harás?",
+        "actionPlaceholder": "ej: empezar a investigar"
+      }
+    },
+    "step5": {
+      "stepLabel": "PASO 5 / 5",
+      "title": "Revisar respuestas",
+      "description": "Revisa tus respuestas antes de continuar.",
+      "generate": "Generar",
+      "terms": "Términos de uso",
+      "and": " y ",
+      "privacy": "Política de privacidad",
+      "agreeSuffix": " acepto",
+      "sections": {
+        "basic": "Información básica",
+        "style": "Estilo",
+        "vision": "Futuro",
+        "lifeDesign": "Diseño de vida"
+      }
+    }
+  },
+  "loadingPage": {
+    "title": "Cargando...",
+    "messages": [
+      "Creando tu futuro...",
+      "Construyendo tu visión...",
+      "Casi listo..."
+    ]
+  },
+  "result": {
+    "label": "RESULTADO",
+    "title": "Tu vision board está listo",
+    "actions": {
+      "save": "Guardar",
+      "link": "Enlace",
+      "x": "X",
+      "instagram": "Instagram"
+    }
+  },
+  "language": {
+    "title": "Seleccionar idioma",
+    "description": "Elige el idioma que deseas usar.",
+    "continue": "Continuar",
+    "options": {
+      "ja": "日本語",
+      "en": "English",
+      "hiragana": "ひらがな",
+      "fr": "Français",
+      "de": "Deutsch",
+      "hi": "हिन्दी",
+      "id": "Bahasa Indonesia",
+      "it": "Italiano",
+      "ko": "한국어",
+      "pt-BR": "Português (Brasil)",
+      "es-419": "Español (Latinoamérica)",
+      "es": "Español (España)"
+    }
+  }
+}

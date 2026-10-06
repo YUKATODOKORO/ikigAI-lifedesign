@@ -1,0 +1,194 @@
+{
+  "common": {
+    "back": "Indietro",
+    "next": "Avanti",
+    "optional": "Opzionale",
+    "topBannerAlt": "Banner superiore",
+    "bottomBannerAlt": "Banner inferiore"
+  },
+  "login": {
+    "label": "PASSCODE",
+    "title": "Inserisci il passcode",
+    "description": "Inserisci il passcode per iniziare.",
+    "passwordLabel": "Passcode",
+    "passwordPlaceholder": "Inserisci il passcode",
+    "continue": "Avanti",
+    "errors": {
+      "missingPasscode": "Impostazione del passcode non trovata. Controlla REACT_APP_PASSCODE.",
+      "wrongPasscode": "Il passcode non è corretto."
+    }
+  },
+  "form": {
+    "step1": {
+      "stepLabel": "PASSO 1 / 4",
+      "title": "Su di te",
+      "description": "Inserisci le informazioni di base che verranno riflesse nel tuo vision board.",
+      "fullName": "Nome",
+      "fullNamePlaceholder": "es. Hanako Yamada",
+      "email": "Email",
+      "emailPlaceholder": "ikigai@gmail.com",
+      "age": "Età",
+      "agePlaceholder": "es. 25",
+      "gender": "Genere",
+      "genderOptions": {
+        "select": "Seleziona",
+        "male": "Maschio",
+        "female": "Femmina",
+        "nonBinary": "Non binario",
+        "preferNotToSay": "Preferisco non rispondere"
+      },
+      "hairAppearance": "Capelli / aspetto",
+      "hairAppearancePlaceholder": "es. capelli lunghi neri, ricci, alto",
+      "charmPoints": "Punti di forza / caratteristiche",
+      "charmPointsPlaceholder": "es. sorriso, fossette, occhi grandi"
+    },
+    "step2": {
+      "stepLabel": "PASSO 2 / 4",
+      "title": "Il tuo stile preferito",
+      "description": "Scegliere colori e stile visivo aiuta a creare un mondo che ti rappresenta.",
+      "favoriteColors": "Colori preferiti (max 3)",
+      "favoriteColorsPlaceholder": "es. rosa, azzurro, bianco",
+      "imageStyle": "Stile immagine",
+      "recommended": "Consigliato",
+      "imageStyleOptions": {
+        "watercolor": "Acquerello",
+        "graphicRecording": "Graphic recording",
+        "realistic": "Realistico",
+        "artistic": "Artistico",
+        "comic": "Fumetto",
+        "anime": "Anime"
+      }
+    },
+    "step3": {
+      "stepLabel": "PASSO 3 / 5",
+      "title": "Tu e il tuo futuro",
+      "description": "Raccontaci chi sei ora e il futuro che vuoi creare.",
+      "selfExpression": "Chi sei",
+      "selfExpressionHelper": "Scrivi in modo concreto cosa ti piace, la tua personalità e i tuoi valori.",
+      "selfExpressionPlaceholder": "es. amo la natura, sono curioso, mi piace creare, voglio lavorare liberamente",
+      "idealVision": "Il futuro che desideri",
+      "idealVisionPlaceholder": "es. tra 1 anno voglio lavorare a Tokyo, tra 10 anni avere uno studio vicino alla natura"
+    },
+    "step4": {
+      "stepLabel": "PASSO 4 / 5",
+      "title": "Aggiungi più profondità",
+      "lifeDesignTitle": "Life Design",
+      "description": "Opzionale. Compila solo le parti che vuoi approfondire.",
+      "identity": {
+        "title": "Te stesso",
+        "helper": "Compila solo se vuoi un risultato più personale.",
+        "happyMoment": "Un momento felice recente",
+        "happyMomentPlaceholder": "es. viaggio con amici",
+        "strengths": "Punti di forza",
+        "strengthsPlaceholder": "es. costanza, empatia, creatività"
+      },
+      "learn": {
+        "title": "Apprendimento",
+        "helper": "Cosa vuoi imparare e perché.",
+        "want": "Cosa vuoi imparare?",
+        "wantPlaceholder": "es. inglese, design",
+        "reason": "Perché vuoi impararlo?",
+        "reasonPlaceholder": "es. carriera, hobby",
+        "whenWhere": "Quando e dove?",
+        "whenWherePlaceholder": "es. online, weekend"
+      },
+      "work": {
+        "title": "Lavoro",
+        "helper": "Definisci il tuo lavoro ideale.",
+        "style": "Che tipo di lavoro vuoi?",
+        "stylePlaceholder": "es. freelance, azienda",
+        "values": "Cosa è importante per te?",
+        "valuesPlaceholder": "es. libertà, guadagno",
+        "incomePlace": "Reddito / luogo ideale?",
+        "incomePlacePlaceholder": "es. lavoro remoto"
+      },
+      "residence": {
+        "title": "Vita",
+        "helper": "Dove e come vuoi vivere.",
+        "place": "Dove vivere",
+        "placePlaceholder": "es. città, estero",
+        "environment": "Ambiente",
+        "environmentPlaceholder": "es. vicino alla natura"
+      },
+      "marriage": {
+        "title": "Relazione",
+        "helper": "Parla della tua relazione ideale.",
+        "idealRelation": "Relazione ideale",
+        "idealRelationPlaceholder": "es. supporto reciproco",
+        "thoughts": "Pensieri sul matrimonio",
+        "thoughtsPlaceholder": "es. voglio sposarmi"
+      },
+      "child": {
+        "title": "Figli",
+        "helper": "Parla dei figli.",
+        "thoughts": "Cosa pensi dei figli?",
+        "thoughtsPlaceholder": "es. voglio figli",
+        "values": "Valori educativi",
+        "valuesPlaceholder": "es. libertà"
+      },
+      "oldAge": {
+        "title": "Futuro",
+        "helper": "Il tuo futuro ideale.",
+        "ideal": "Futuro ideale",
+        "idealPlaceholder": "es. vita tranquilla",
+        "preparation": "Preparazione",
+        "preparationPlaceholder": "es. risparmi"
+      },
+      "nextAction": {
+        "title": "Prossima azione",
+        "helper": "Un piccolo passo questo mese.",
+        "action": "Cosa farai?",
+        "actionPlaceholder": "es. iniziare a cercare"
+      }
+    },
+    "step5": {
+      "stepLabel": "PASSO 5 / 5",
+      "title": "Controlla le risposte",
+      "description": "Controlla le tue risposte prima di continuare.",
+      "generate": "Genera",
+      "terms": "Termini di utilizzo",
+      "and": " e ",
+      "privacy": "Privacy policy",
+      "agreeSuffix": " accetto",
+      "sections": {
+        "basic": "Informazioni base",
+        "style": "Stile",
+        "vision": "Futuro",
+        "lifeDesign": "Life Design"
+      }
+    }
+  },
+  "loadingPage": {
+    "title": "Caricamento...",
+    "messages": [
+      "Creando il tuo futuro...",
+      "Costruendo la tua visione...",
+      "Quasi pronto..."
+    ]
+  },
+  "result": {
+    "label": "RISULTATO",
+    "title": "Il tuo Vision Board è pronto",
+    "actions": {
+      "save": "Salva",
+      "link": "Link",
+      "x": "X",
+      "instagram": "Instagram"
+    }
+  },
+  "language": {
+    "title": "Seleziona la lingua",
+    "description": "Scegli la lingua da usare.",
+    "continue": "Avanti",
+    "options": {
+      "ja": "日本語",
+      "en": "English",
+      "hiragana": "ひらがな",
+      "fr": "Français",
+      "de": "Deutsch",
+      "hi": "हिन्दी",
+      "id": "Bahasa Indonesia",
+      "it": "Italiano"
+    }
+  }
+}

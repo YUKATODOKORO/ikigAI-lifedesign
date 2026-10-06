@@ -1,0 +1,271 @@
+{
+  "common": {
+    "back": "もどる",
+    "next": "つぎへ",
+    "optional": "にんい",
+    "topBannerAlt": "うえのがぞう",
+    "bottomBannerAlt": "したのがぞう"
+  },
+
+  "login": {
+    "label": "ぱすこーど",
+    "title": "ぱすこーどをいれてね",
+    "description": "つづけるために、ぱすこーどをいれてください。",
+    "passwordLabel": "ぱすこーど",
+    "passwordPlaceholder": "ここにいれる",
+    "continue": "つぎへ",
+    "errors": {
+      "missingPasscode": "ぱすこーどのせっていがありません。",
+      "wrongPasscode": "ぱすこーどがちがいます。"
+    }
+  },
+
+  "form": {
+    "step1": {
+      "stepLabel": "すてっぷ 1",
+      "title": "あなたのこと",
+      "description": "あなたのことをおしえてください。",
+      "fullName": "なまえ",
+      "fullNamePlaceholder": "れい：やまだ はなこ",
+      "email": "めーるあどれす",
+      "emailPlaceholder": "example@gmail.com",
+      "age": "ねんれい",
+      "agePlaceholder": "れい：25",
+      "gender": "せいべつ",
+      "genderOptions": {
+        "select": "えらんでください",
+        "male": "おとこ",
+        "female": "おんな",
+        "nonBinary": "どちらでもない",
+        "preferNotToSay": "こたえない"
+      },
+      "hairAppearance": "みため",
+      "hairAppearancePlaceholder": "れい：くろかみ、せがたかい",
+      "charmPoints": "いいところ",
+      "charmPointsPlaceholder": "れい：えがお、めがきれい"
+    },
+
+    "step2": {
+      "stepLabel": "すてっぷ 2",
+      "title": "すきなかんじ",
+      "description": "すきないろやふんいきをえらんでね。",
+      "favoriteColors": "すきないろ（3つまで）",
+      "favoriteColorsPlaceholder": "れい：ぴんく、あお、しろ",
+      "imageStyle": "えのかんじ",
+      "recommended": "おすすめ",
+      "imageStyleOptions": {
+        "watercolor": "すいさい",
+        "graphicRecording": "ぐらふぃっく",
+        "realistic": "ほんものっぽい",
+        "artistic": "あーと",
+        "comic": "まんが",
+        "anime": "あにめ"
+      }
+    },
+
+    "step3": {
+      "stepLabel": "すてっぷ 3",
+      "title": "あなたとみらい",
+      "description": "いまのあなたと、これからのことをおしえてね。",
+      "selfExpression": "あなたらしさ",
+      "selfExpressionHelper": "すきなことやせいかくをかいてください。",
+      "selfExpressionPlaceholder": "れい：あそぶのがすき、やさしい",
+      "idealVision": "これからどうなりたい？",
+      "idealVisionPlaceholder": "れい：たのしくくらしたい"
+    },
+
+    "step4": {
+      "stepLabel": "すてっぷ 4",
+      "title": "もっとくわしく",
+      "lifeDesignTitle": "らいふでざいん",
+      "description": "にんいです。かきたいところだけでいいよ。",
+      
+      "identity": {
+        "title": "あなたのこと",
+        "helper": "かきたいときだけでいいよ",
+        "happyMoment": "うれしかったこと",
+        "happyMomentPlaceholder": "れい：ともだちとあそんだ",
+        "strengths": "とくいなこと",
+        "strengthsPlaceholder": "れい：やさしい、がんばれる"
+      },
+
+      "learn": {
+        "title": "まなび",
+        "helper": "まなびたいこと",
+        "want": "なにをまなびたい？",
+        "wantPlaceholder": "れい：えいご",
+        "reason": "なんでまなびたい？",
+        "reasonPlaceholder": "れい：たのしいから",
+        "whenWhere": "いつどこで？",
+        "whenWherePlaceholder": "れい：おうち"
+      },
+
+      "work": {
+        "title": "しごと",
+        "helper": "どんなしごとがいい？",
+        "style": "どんなしごと？",
+        "stylePlaceholder": "れい：じゆう",
+        "values": "たいせつなこと",
+        "valuesPlaceholder": "れい：たのしさ",
+        "incomePlace": "おかねやばしょ",
+        "incomePlacePlaceholder": "れい：おうちで"
+      },
+
+      "residence": {
+        "title": "くらし",
+        "helper": "どこにすみたい？",
+        "place": "ばしょ",
+        "placePlaceholder": "れい：しぜん",
+        "environment": "おうち",
+        "environmentPlaceholder": "れい：ひろい"
+      },
+
+      "marriage": {
+        "title": "ぱーとなー",
+        "helper": "どんなかんけい？",
+        "idealRelation": "りそう",
+        "idealRelationPlaceholder": "れい：なかよし",
+        "thoughts": "けっこんについて",
+        "thoughtsPlaceholder": "れい：したい"
+      },
+
+      "child": {
+        "title": "こども",
+        "helper": "こどものこと",
+        "thoughts": "どうおもう？",
+        "thoughtsPlaceholder": "れい：ほしい",
+        "values": "たいせつなこと",
+        "valuesPlaceholder": "れい：やさしさ"
+      },
+
+      "oldAge": {
+        "title": "みらい",
+        "helper": "さきのこと",
+        "ideal": "どうなりたい？",
+        "idealPlaceholder": "れい：のんびり",
+        "preparation": "じゅんび",
+        "preparationPlaceholder": "れい：けんこう"
+      },
+
+      "nextAction": {
+        "title": "つぎにすること",
+        "helper": "ちいさな1ぽ",
+        "action": "なにする？",
+        "actionPlaceholder": "れい：しらべる"
+      }
+    },
+
+    "step5": {
+      "stepLabel": "すてっぷ 5",
+      "title": "かくにん",
+      "description": "ないようをみてね。",
+      "generate": "つくる",
+      "terms": "りようきやく",
+      "and": "と",
+      "privacy": "ぷらいばしー",
+      "agreeSuffix": "にどういします",
+      "sections": {
+        "basic": "きほん",
+        "style": "すき",
+        "vision": "みらい",
+        "lifeDesign": "らいふ"
+      },
+      "items": {
+        "fullName": "なまえ",
+        "email": "めーる",
+        "age": "ねんれい",
+        "gender": "せいべつ",
+        "hairAppearance": "みため",
+        "charmPoints": "いいところ",
+        "favoriteColors": "いろ",
+        "imageStyle": "すたいる",
+        "selfExpression": "あなたらしさ",
+        "idealVision": "みらい",
+        "happyMoment": "うれしい",
+        "strengths": "とくい",
+        "learnWant": "まなび",
+        "learnReason": "りゆう",
+        "learnWhenWhere": "ばしょ",
+        "workStyle": "しごと",
+        "workValues": "たいせつ",
+        "workIdealIncomePlace": "おかね",
+        "residencePlace": "ばしょ",
+        "residenceEnvironment": "おうち",
+        "marriageIdealRelation": "かんけい",
+        "marriageThoughts": "けっこん",
+        "childThoughts": "こども",
+        "childValues": "たいせつ",
+        "oldAgeIdeal": "みらい",
+        "oldAgePreparation": "じゅんび",
+        "nextAction": "つぎ"
+      }
+    }
+  },
+
+  "loadingPage": {
+    "title": "つくっています...",
+    "messages": [
+      "かんがえています...",
+      "つくっています...",
+      "もうすこし..."
+    ],
+    "errors": {
+      "missingData": "でーたがありません。",
+      "imageGenerationFailed": "つくれませんでした。",
+      "dbSaveFailed": "ほぞんできませんでした",
+      "generationFailed": "しっぱいしました。"
+    }
+  },
+
+  "result": {
+    "label": "けっか",
+    "title": "できました！",
+    "generatedImageAlt": "がぞう",
+    "expandedImageAlt": "がぞう",
+    "closeModal": "とじる",
+    "noImage": "がぞうがありません。",
+    "actions": {
+      "save": "ほぞん",
+      "link": "りんく",
+      "x": "X",
+      "instagram": "Instagram"
+    },
+    "share": {
+      "text": "びじょんぼーどをつくったよ！",
+      "hashtags": "AIビジョンボード",
+      "linkCopied": "こぴーしました",
+      "linkCopiedForInstagram": "こぴーしました",
+      "copyFailed": "しっぱい",
+      "downloadFailed": "ほぞんできません"
+    },
+    "feedback": {
+      "thankYou": "ありがとう！",
+      "saved": "ほぞんしました",
+      "satisfaction": "どうでしたか？",
+      "reasonLabel": "かんそう（にんい）",
+      "reasonPlaceholder": "おしえてね",
+      "submit": "おくる",
+      "submitting": "おくっています...",
+      "selectRatingAlert": "えらんでください",
+      "submitFailed": "しっぱいしました",
+      "options": {
+        "verySatisfied": "すごくいい",
+        "satisfied": "いい",
+        "neutral": "ふつう",
+        "unsatisfied": "あまりよくない",
+        "veryUnsatisfied": "よくない"
+      }
+    }
+  },
+
+  "language": {
+    "title": "ことばをえらんでね",
+    "description": "つかいたいことばをえらんでください。",
+    "continue": "つぎへ",
+    "options": {
+      "ja": "にほんご",
+      "en": "English",
+      "hiragana": "ひらがな"
+    }
+  }
+}

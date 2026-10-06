@@ -1,0 +1,193 @@
+{
+  "common": {
+    "back": "Kembali",
+    "next": "Lanjut",
+    "optional": "Opsional",
+    "topBannerAlt": "Banner atas",
+    "bottomBannerAlt": "Banner bawah"
+  },
+  "login": {
+    "label": "PASSCODE",
+    "title": "Masukkan Passcode",
+    "description": "Masukkan passcode untuk memulai.",
+    "passwordLabel": "Passcode",
+    "passwordPlaceholder": "Masukkan passcode",
+    "continue": "Lanjut",
+    "errors": {
+      "missingPasscode": "Pengaturan passcode tidak ditemukan. Periksa REACT_APP_PASSCODE.",
+      "wrongPasscode": "Passcode salah."
+    }
+  },
+  "form": {
+    "step1": {
+      "stepLabel": "LANGKAH 1 / 4",
+      "title": "Tentang Anda",
+      "description": "Masukkan informasi dasar yang akan ditampilkan di vision board Anda.",
+      "fullName": "Nama",
+      "fullNamePlaceholder": "contoh: Hanako Yamada",
+      "email": "Alamat Email",
+      "emailPlaceholder": "ikigai@gmail.com",
+      "age": "Usia",
+      "agePlaceholder": "contoh: 25",
+      "gender": "Jenis Kelamin",
+      "genderOptions": {
+        "select": "Pilih",
+        "male": "Laki-laki",
+        "female": "Perempuan",
+        "nonBinary": "Non-biner",
+        "preferNotToSay": "Tidak ingin menjawab"
+      },
+      "hairAppearance": "Rambut / Penampilan",
+      "hairAppearancePlaceholder": "contoh: rambut hitam panjang, rambut keriting, tinggi",
+      "charmPoints": "Daya tarik / ciri khas",
+      "charmPointsPlaceholder": "contoh: senyum, lesung pipi, mata besar"
+    },
+    "step2": {
+      "stepLabel": "LANGKAH 2 / 4",
+      "title": "Gaya Favorit Anda",
+      "description": "Memilih warna dan gaya visual akan membuat vision board lebih sesuai dengan Anda.",
+      "favoriteColors": "Warna favorit (maks. 3)",
+      "favoriteColorsPlaceholder": "contoh: pink, biru muda, putih",
+      "imageStyle": "Gaya Gambar",
+      "recommended": "Direkomendasikan",
+      "imageStyleOptions": {
+        "watercolor": "Cat air",
+        "graphicRecording": "Graphic recording",
+        "realistic": "Realistis",
+        "artistic": "Artistik",
+        "comic": "Komik",
+        "anime": "Anime"
+      }
+    },
+    "step3": {
+      "stepLabel": "LANGKAH 3 / 5",
+      "title": "Anda & Masa Depan Anda",
+      "description": "Ceritakan siapa Anda sekarang dan masa depan yang ingin Anda capai.",
+      "selfExpression": "Tentang diri Anda",
+      "selfExpressionHelper": "Tuliskan apa yang Anda sukai, kepribadian Anda, dan nilai yang penting bagi Anda.",
+      "selfExpressionPlaceholder": "contoh: suka alam, rasa ingin tahu tinggi, suka membuat sesuatu, ingin bekerja bebas",
+      "idealVision": "Masa depan yang Anda inginkan",
+      "idealVisionPlaceholder": "contoh: dalam 1 tahun ingin bekerja di Tokyo, dalam 10 tahun ingin punya studio dekat alam"
+    },
+    "step4": {
+      "stepLabel": "LANGKAH 4 / 5",
+      "title": "Tambahkan Lebih Dalam",
+      "lifeDesignTitle": "Desain Hidup",
+      "description": "Opsional. Pilih bagian yang ingin Anda isi lebih dalam.",
+      "identity": {
+        "title": "Diri Anda",
+        "helper": "Isi hanya jika ingin hasil lebih personal.",
+        "happyMoment": "Momen bahagia terbaru",
+        "happyMomentPlaceholder": "contoh: jalan-jalan dengan teman",
+        "strengths": "Kekuatan",
+        "strengthsPlaceholder": "contoh: konsisten, empati, kreatif"
+      },
+      "learn": {
+        "title": "Belajar",
+        "helper": "Apa yang ingin Anda pelajari dan kenapa.",
+        "want": "Apa yang ingin dipelajari?",
+        "wantPlaceholder": "contoh: bahasa Inggris, desain",
+        "reason": "Kenapa ingin belajar?",
+        "reasonPlaceholder": "contoh: karier, hobi",
+        "whenWhere": "Kapan & di mana?",
+        "whenWherePlaceholder": "contoh: online, akhir pekan"
+      },
+      "work": {
+        "title": "Pekerjaan",
+        "helper": "Gambarkan pekerjaan ideal Anda.",
+        "style": "Gaya kerja yang diinginkan?",
+        "stylePlaceholder": "contoh: freelance, bisnis",
+        "values": "Apa yang penting di pekerjaan?",
+        "valuesPlaceholder": "contoh: kebebasan, penghasilan",
+        "incomePlace": "Penghasilan / lokasi ideal?",
+        "incomePlacePlaceholder": "contoh: kerja remote"
+      },
+      "residence": {
+        "title": "Tempat Tinggal",
+        "helper": "Di mana dan bagaimana Anda ingin tinggal.",
+        "place": "Tempat tinggal",
+        "placePlaceholder": "contoh: kota, luar negeri",
+        "environment": "Lingkungan",
+        "environmentPlaceholder": "contoh: dekat alam"
+      },
+      "marriage": {
+        "title": "Pasangan",
+        "helper": "Tentang hubungan Anda.",
+        "idealRelation": "Hubungan ideal",
+        "idealRelationPlaceholder": "contoh: saling mendukung",
+        "thoughts": "Pendapat tentang pernikahan",
+        "thoughtsPlaceholder": "contoh: ingin menikah"
+      },
+      "child": {
+        "title": "Anak",
+        "helper": "Tentang anak dan pengasuhan.",
+        "thoughts": "Pendapat tentang anak",
+        "thoughtsPlaceholder": "contoh: ingin punya anak",
+        "values": "Nilai dalam pengasuhan",
+        "valuesPlaceholder": "contoh: kebebasan"
+      },
+      "oldAge": {
+        "title": "Masa Depan",
+        "helper": "Tentang kehidupan di masa depan.",
+        "ideal": "Masa depan ideal",
+        "idealPlaceholder": "contoh: hidup tenang",
+        "preparation": "Persiapan",
+        "preparationPlaceholder": "contoh: tabungan"
+      },
+      "nextAction": {
+        "title": "Langkah Berikutnya",
+        "helper": "Langkah kecil yang bisa dilakukan bulan ini.",
+        "action": "Apa yang akan Anda lakukan?",
+        "actionPlaceholder": "contoh: mulai riset"
+      }
+    },
+    "step5": {
+      "stepLabel": "LANGKAH 5 / 5",
+      "title": "Periksa Jawaban",
+      "description": "Periksa jawaban Anda sebelum melanjutkan.",
+      "generate": "Buat",
+      "terms": "Syarat Penggunaan",
+      "and": " dan ",
+      "privacy": "Kebijakan Privasi",
+      "agreeSuffix": " saya setuju",
+      "sections": {
+        "basic": "Informasi dasar",
+        "style": "Gaya",
+        "vision": "Masa depan",
+        "lifeDesign": "Desain hidup"
+      }
+    }
+  },
+  "loadingPage": {
+    "title": "Memuat...",
+    "messages": [
+      "Membuat masa depan Anda...",
+      "Menyusun visi Anda...",
+      "Hampir selesai..."
+    ]
+  },
+  "result": {
+    "label": "HASIL",
+    "title": "Vision Board Anda Siap",
+    "actions": {
+      "save": "Simpan",
+      "link": "Link",
+      "x": "X",
+      "instagram": "Instagram"
+    }
+  },
+  "language": {
+    "title": "Pilih Bahasa",
+    "description": "Pilih bahasa yang ingin digunakan.",
+    "continue": "Lanjut",
+    "options": {
+      "ja": "日本語",
+      "en": "English",
+      "hiragana": "ひらがな",
+      "fr": "Français",
+      "de": "Deutsch",
+      "hi": "हिन्दी",
+      "id": "Bahasa Indonesia"
+    }
+  }
+}

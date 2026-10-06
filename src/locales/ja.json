@@ -1,0 +1,18 @@
+{
+  "common": {
+    "topBannerAlt": "トップバナー",
+    "bottomBannerAlt": "ボトムバナー"
+  },
+  "login": {
+    "label": "PASSWORD",
+    "title": "パスコードを入力",
+    "description": "体験を始めるには、パスコードを入力してください。",
+    "passwordLabel": "パスコード",
+    "passwordPlaceholder": "パスコードを入力",
+    "continue": "次へ",
+    "errors": {
+      "missingPasscode": "パスコード設定が見つかりません。REACT_APP_PASSCODEを確認してください。",
+      "wrongPasscode": "パスコードが違います。"
+    }
+  }
+}

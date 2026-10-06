@@ -1,0 +1,244 @@
+{
+  "common": {
+    "back": "戻る",
+    "next": "次へ",
+    "optional": "任意",
+    "topBannerAlt": "トップバナー",
+    "bottomBannerAlt": "ボトムバナー"
+  },
+  "login": {
+    "label": "PASSWORD",
+    "title": "パスコードを入力",
+    "description": "体験を始めるには、パスコードを入力してください。",
+    "passwordLabel": "パスコード",
+    "passwordPlaceholder": "パスコードを入力",
+    "continue": "次へ",
+    "errors": {
+      "missingPasscode": "パスコード設定が見つかりません。REACT_APP_PASSCODEを確認してください。",
+      "wrongPasscode": "パスコードが違います。"
+    }
+  },
+  "form": {
+    "step1": {
+      "stepLabel": "STEP 1 / 4",
+      "title": "あなたについて",
+      "description": "ビジョンボードに反映するための基本情報を入力してください。",
+      "fullName": "お名前",
+      "fullNamePlaceholder": "例：山田 花子",
+      "email": "メールアドレス",
+      "emailPlaceholder": "ikigai@gmail.com",
+      "age": "年齢",
+      "agePlaceholder": "例：25",
+      "gender": "性別",
+      "genderOptions": {
+        "select": "選択してください",
+        "male": "男性",
+        "female": "女性",
+        "nonBinary": "ノンバイナリー",
+        "preferNotToSay": "回答しない"
+      },
+      "hairAppearance": "髪型・見た目の特徴",
+      "hairAppearancePlaceholder": "例：黒髪ロング、くせ毛、背が高い",
+      "charmPoints": "チャームポイント・印象的な特徴",
+      "charmPointsPlaceholder": "例：笑顔、えくぼ、大きな目"
+    },
+    "step2": {
+      "stepLabel": "STEP 2 / 4",
+      "title": "好きな雰囲気",
+      "description": "色や表現スタイルを選ぶと、あなたらしい世界観に近づきます。",
+      "favoriteColors": "好きな色（最大3色）",
+      "favoriteColorsPlaceholder": "例：ピンク、水色、白",
+      "imageStyle": "画像スタイル",
+      "recommended": "おすすめ",
+      "imageStyleOptions": {
+        "watercolor": "水彩画風",
+        "graphicRecording": "グラレコ風",
+        "realistic": "リアル風",
+        "artistic": "アート風",
+        "comic": "漫画風",
+        "anime": "アニメ風"
+      }
+    },
+    "step3": {
+      "stepLabel": "STEP 3 / 5",
+      "title": "あなたらしさと未来",
+      "description": "今のあなたらしさと、これから叶えたい未来を教えてください。",
+      "selfExpression": "あなたらしさ",
+      "selfExpressionHelper": "好きなこと、性格、大切にしている価値観などを、できるだけ具体的に書いてください。",
+      "selfExpressionPlaceholder": "例：アウトドアが好き、好奇心旺盛、ものづくりが好き、自由な働き方を大切にしたい",
+      "idealVision": "これから叶えたい未来",
+      "idealVisionPlaceholder": "例：1年後は東京で自分らしく働きたい。10年後は自然の近くにアトリエを作りたい。"
+    },
+    "step4": {
+      "stepLabel": "STEP 4 / 5",
+      "title": "さらに深く描く",
+      "lifeDesignTitle": "ライフデザイン",
+      "description": "任意です。より深く反映したい項目を選んで、入力してください。",
+      "identity": {
+        "title": "わたしの軸",
+        "helper": "よりあなたらしい表現にしたいときだけ入力してください。",
+        "happyMoment": "最近幸せだった瞬間",
+        "happyMomentPlaceholder": "例：友人と旅行した、新しいことを始めた",
+        "strengths": "強み",
+        "strengthsPlaceholder": "例：継続力、共感力、アイデア力"
+      },
+      "learn": {
+        "title": "学び",
+        "helper": "これから学びたいことや、学ぶ理由を整理できます。",
+        "want": "どんなことを学びたいですか？",
+        "wantPlaceholder": "例：英語、デザイン、料理",
+        "reason": "学ぶ目的・理由は？",
+        "reasonPlaceholder": "例：キャリアアップ、趣味、自己成長",
+        "whenWhere": "いつ・どこで学びたいですか？",
+        "whenWherePlaceholder": "例：オンライン、週末、留学"
+      },
+      "work": {
+        "title": "仕事",
+        "helper": "理想の仕事や働き方を具体化できます。",
+        "style": "どんな仕事・働き方をしたいですか？",
+        "stylePlaceholder": "例：起業、フリーランス、会社員",
+        "values": "仕事で大切にしていることは？",
+        "valuesPlaceholder": "例：やりがい、収入、自由",
+        "incomePlace": "理想の年収・働く場所は？",
+        "incomePlacePlaceholder": "例：年収1000万円、リモート、海外"
+      },
+      "residence": {
+        "title": "暮らし",
+        "helper": "どこで、どんな環境で暮らしたいかを整理できます。",
+        "place": "どこに住みたいですか？",
+        "placePlaceholder": "例：都市、地方、海外",
+        "environment": "どんな家・環境で暮らしたいですか？",
+        "environmentPlaceholder": "例：広い家、自然が近い、便利な立地"
+      },
+      "marriage": {
+        "title": "パートナーシップ",
+        "helper": "パートナーシップや結婚観を整理できます。",
+        "idealRelation": "パートナーとの関係について理想は？",
+        "idealRelationPlaceholder": "例：支え合える、尊重し合える、楽しい関係",
+        "thoughts": "結婚・同居についてどう考えていますか？",
+        "thoughtsPlaceholder": "例：結婚したい、まずは同居から考えたい"
+      },
+      "child": {
+        "title": "子育て・出産",
+        "helper": "子どもや子育てへの考えを整理できます。",
+        "thoughts": "子どもについてどう考えていますか？",
+        "thoughtsPlaceholder": "例：子どもがほしい、まだ未定、こだわらない",
+        "values": "子育てで大切にしたいことは？",
+        "valuesPlaceholder": "例：個性、やさしさ、自由"
+      },
+      "oldAge": {
+        "title": "老後",
+        "helper": "老後の理想や、今からの備えを考えられます。",
+        "ideal": "理想の老後・シニアライフは？",
+        "idealPlaceholder": "例：穏やかな生活、旅行、家族との時間",
+        "preparation": "老後に向けて今から準備したいことは？",
+        "preparationPlaceholder": "例：貯金、健康習慣、人とのつながり"
+      },
+      "nextAction": {
+        "title": "ネクストアクション",
+        "helper": "今月中にできる小さな一歩を書いておくと、行動につながりやすくなります。",
+        "action": "今月中にできる小さな一歩は？",
+        "actionPlaceholder": "例：新しいルートを計画する、情報収集を始める"
+      }
+    },
+    "step5": {
+      "stepLabel": "STEP 5 / 5",
+      "title": "入力内容の確認",
+      "description": "内容をご確認のうえ、同意して生成に進んでください。",
+      "generate": "生成する",
+      "terms": "利用規約",
+      "and": "と",
+      "privacy": "プライバシーポリシー",
+      "agreeSuffix": "に同意します",
+      "sections": {
+        "basic": "基本情報",
+        "style": "好きな雰囲気",
+        "vision": "あなたらしさと未来",
+        "lifeDesign": "ライフデザイン"
+      },
+      "items": {
+        "fullName": "お名前",
+        "email": "メールアドレス",
+        "age": "年齢",
+        "gender": "性別",
+        "hairAppearance": "髪型・見た目の特徴",
+        "charmPoints": "チャームポイント・印象的な特徴",
+        "favoriteColors": "好きな色",
+        "imageStyle": "画像スタイル",
+        "selfExpression": "あなたらしさ",
+        "idealVision": "これから叶えたい未来",
+        "happyMoment": "最近幸せだった瞬間",
+        "strengths": "強み",
+        "learnWant": "学びたいこと",
+        "learnReason": "学ぶ目的・理由",
+        "learnWhenWhere": "いつ・どこで学びたいか",
+        "workStyle": "仕事・働き方",
+        "workValues": "仕事で大切にしていること",
+        "workIdealIncomePlace": "理想の年収・働く場所",
+        "residencePlace": "住みたい場所",
+        "residenceEnvironment": "理想の家・環境",
+        "marriageIdealRelation": "パートナーとの理想の関係",
+        "marriageThoughts": "結婚・同居について",
+        "childThoughts": "子どもについて",
+        "childValues": "子育てで大切にしたいこと",
+        "oldAgeIdeal": "理想の老後・シニアライフ",
+        "oldAgePreparation": "老後に向けて準備したいこと",
+        "nextAction": "ネクストアクション"
+      }
+    }
+  },
+  "loadingPage": {
+    "title": "Loading...",
+    "messages": [
+      "あなたの未来を描いています...",
+      "イメージを組み立てています...",
+      "もう少しで完成します..."
+    ],
+    "errors": {
+      "missingData": "入力データが見つかりませんでした。",
+      "imageGenerationFailed": "画像生成に失敗しました。",
+      "dbSaveFailed": "DB保存に失敗しました：{{message}}",
+      "generationFailed": "生成に失敗しました。もう一度お試しください。"
+    }
+  },
+  "result": {
+    "label": "RESULT",
+    "title": "あなたのビジョンボードが完成しました",
+    "generatedImageAlt": "生成されたビジョンボード画像",
+    "expandedImageAlt": "拡大されたビジョンボード画像",
+    "closeModal": "画像を閉じる",
+    "noImage": "生成画像が見つかりませんでした。",
+    "actions": {
+      "save": "保存",
+      "link": "リンク",
+      "x": "X",
+      "instagram": "Instagram"
+    },
+    "share": {
+      "text": "AIビジョンボードを作成しました！",
+      "hashtags": "AIビジョンボード,ikigAI",
+      "linkCopied": "リンクをコピーしました！",
+      "linkCopiedForInstagram": "リンクをコピーしました。Instagramを開きます。",
+      "copyFailed": "コピーに失敗しました。",
+      "downloadFailed": "画像の保存に失敗しました。"
+    },
+    "feedback": {
+      "thankYou": "回答ありがとうございました",
+      "saved": "アンケートの回答を保存しました。",
+      "satisfaction": "今回のビジョンボードはいかがでしたか？",
+      "reasonLabel": "感想があれば教えてください（任意）",
+      "reasonPlaceholder": "よかった点、もう少し変えたい点などがあればご記入ください。",
+      "submit": "送信する",
+      "submitting": "送信中...",
+      "selectRatingAlert": "満足度を選択してください。",
+      "submitFailed": "回答の送信に失敗しました。\n理由: {{message}}",
+      "options": {
+        "verySatisfied": "とても満足",
+        "satisfied": "満足",
+        "neutral": "普通",
+        "unsatisfied": "やや不満",
+        "veryUnsatisfied": "不満"
+      }
+    }
+  }
+}

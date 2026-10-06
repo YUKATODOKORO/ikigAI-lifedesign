@@ -1,0 +1,201 @@
+{
+  "common": {
+    "back": "رجوع",
+    "next": "التالي",
+    "optional": "اختياري",
+    "topBannerAlt": "الشريط العلوي",
+    "bottomBannerAlt": "الشريط السفلي"
+  },
+  "login": {
+    "label": "رمز الدخول",
+    "title": "أدخل رمز الدخول",
+    "description": "أدخل رمز الدخول لبدء التجربة.",
+    "passwordLabel": "رمز الدخول",
+    "passwordPlaceholder": "أدخل رمز الدخول",
+    "continue": "التالي",
+    "errors": {
+      "missingPasscode": "لم يتم العثور على إعداد رمز الدخول. يرجى التحقق من REACT_APP_PASSCODE.",
+      "wrongPasscode": "رمز الدخول غير صحيح."
+    }
+  },
+  "form": {
+    "step1": {
+      "stepLabel": "الخطوة 1 / 4",
+      "title": "عن نفسك",
+      "description": "أدخل المعلومات الأساسية التي ستظهر في لوحة رؤيتك.",
+      "fullName": "الاسم",
+      "fullNamePlaceholder": "مثال: Hanako Yamada",
+      "email": "البريد الإلكتروني",
+      "emailPlaceholder": "ikigai@gmail.com",
+      "age": "العمر",
+      "agePlaceholder": "مثال: 25",
+      "gender": "الجنس",
+      "genderOptions": {
+        "select": "اختر",
+        "male": "ذكر",
+        "female": "أنثى",
+        "nonBinary": "غير ثنائي",
+        "preferNotToSay": "أفضل عدم الإجابة"
+      },
+      "hairAppearance": "الشعر / المظهر",
+      "hairAppearancePlaceholder": "مثال: شعر أسود طويل، شعر مجعد، طويل القامة",
+      "charmPoints": "نقاط الجاذبية / المميزات",
+      "charmPointsPlaceholder": "مثال: الابتسامة، الغمازات، العيون الكبيرة"
+    },
+    "step2": {
+      "stepLabel": "الخطوة 2 / 4",
+      "title": "أسلوبك المفضل",
+      "description": "اختيار الألوان والأسلوب البصري يساعد على إنشاء لوحة أقرب إليك.",
+      "favoriteColors": "الألوان المفضلة (حتى 3)",
+      "favoriteColorsPlaceholder": "مثال: وردي، أزرق فاتح، أبيض",
+      "imageStyle": "أسلوب الصورة",
+      "recommended": "موصى به",
+      "imageStyleOptions": {
+        "watercolor": "ألوان مائية",
+        "graphicRecording": "أسلوب رسومي",
+        "realistic": "واقعي",
+        "artistic": "فني",
+        "comic": "قصص مصورة",
+        "anime": "أنمي"
+      }
+    },
+    "step3": {
+      "stepLabel": "الخطوة 3 / 5",
+      "title": "أنت ومستقبلك",
+      "description": "أخبرنا من أنت الآن وما المستقبل الذي تريد إنشاءه.",
+      "selfExpression": "ما يميزك",
+      "selfExpressionHelper": "اكتب ما تحبه، شخصيتك، والقيم المهمة بالنسبة لك.",
+      "selfExpressionPlaceholder": "مثال: أحب الطبيعة، فضولي، أحب صنع الأشياء، أريد العمل بحرية",
+      "idealVision": "المستقبل الذي تريده",
+      "idealVisionPlaceholder": "مثال: أريد العمل بطريقتي الخاصة، وأن أعيش بالقرب من الطبيعة مستقبلاً"
+    },
+    "step4": {
+      "stepLabel": "الخطوة 4 / 5",
+      "title": "إضافة تفاصيل أعمق",
+      "lifeDesignTitle": "تصميم الحياة",
+      "description": "اختياري. اختر الجوانب التي تريد أن تظهر بعمق أكبر.",
+      "identity": {
+        "title": "جوهر شخصيتي",
+        "helper": "املأ هذا الجزء إذا كنت تريد نتيجة أكثر قربًا منك.",
+        "happyMoment": "لحظة سعيدة مؤخرًا",
+        "happyMomentPlaceholder": "مثال: سافرت مع الأصدقاء، بدأت شيئًا جديدًا",
+        "strengths": "نقاط القوة",
+        "strengthsPlaceholder": "مثال: الاستمرارية، التعاطف، الإبداع"
+      },
+      "learn": {
+        "title": "التعلم",
+        "helper": "رتّب ما تريد تعلمه ولماذا.",
+        "want": "ماذا تريد أن تتعلم؟",
+        "wantPlaceholder": "مثال: الإنجليزية، التصميم، الطبخ",
+        "reason": "لماذا تريد تعلمه؟",
+        "reasonPlaceholder": "مثال: تطوير مهني، هواية، نمو شخصي",
+        "whenWhere": "متى وأين تريد التعلم؟",
+        "whenWherePlaceholder": "مثال: عبر الإنترنت، في عطلة نهاية الأسبوع"
+      },
+      "work": {
+        "title": "العمل",
+        "helper": "وضّح عملك المثالي وطريقة العمل التي تريدها.",
+        "style": "ما نوع العمل أو أسلوب العمل الذي تريده؟",
+        "stylePlaceholder": "مثال: عمل حر، ريادة أعمال، وظيفة في شركة",
+        "values": "ما المهم بالنسبة لك في العمل؟",
+        "valuesPlaceholder": "مثال: الحرية، الدخل، المعنى",
+        "incomePlace": "ما الدخل أو مكان العمل المثالي؟",
+        "incomePlacePlaceholder": "مثال: عمل عن بُعد، العمل في الخارج"
+      },
+      "residence": {
+        "title": "نمط الحياة",
+        "helper": "رتّب أين وكيف تريد أن تعيش.",
+        "place": "أين تريد أن تعيش؟",
+        "placePlaceholder": "مثال: مدينة، ريف، خارج البلاد",
+        "environment": "ما نوع المنزل أو البيئة التي تريدها؟",
+        "environmentPlaceholder": "مثال: منزل واسع، قريب من الطبيعة"
+      },
+      "marriage": {
+        "title": "العلاقة",
+        "helper": "رتّب أفكارك حول العلاقة والزواج.",
+        "idealRelation": "ما العلاقة المثالية بالنسبة لك؟",
+        "idealRelationPlaceholder": "مثال: علاقة داعمة، محترمة، سعيدة",
+        "thoughts": "ما رأيك في الزواج أو العيش مع الشريك؟",
+        "thoughtsPlaceholder": "مثال: أريد الزواج، أريد التفكير في العيش معًا أولًا"
+      },
+      "child": {
+        "title": "الأطفال / التربية",
+        "helper": "رتّب أفكارك حول الأطفال والتربية.",
+        "thoughts": "ما رأيك في إنجاب الأطفال؟",
+        "thoughtsPlaceholder": "مثال: أريد أطفالًا، لم أقرر بعد",
+        "values": "ما القيم المهمة في التربية؟",
+        "valuesPlaceholder": "مثال: اللطف، الحرية، احترام الشخصية"
+      },
+      "oldAge": {
+        "title": "الحياة المستقبلية",
+        "helper": "فكّر في حياتك المثالية لاحقًا وما تريد الاستعداد له.",
+        "ideal": "كيف تتخيل حياتك المستقبلية؟",
+        "idealPlaceholder": "مثال: حياة هادئة، سفر، وقت مع العائلة",
+        "preparation": "ماذا تريد أن تجهز للمستقبل؟",
+        "preparationPlaceholder": "مثال: الادخار، الصحة، العلاقات"
+      },
+      "nextAction": {
+        "title": "الخطوة التالية",
+        "helper": "اكتب خطوة صغيرة يمكنك القيام بها هذا الشهر.",
+        "action": "ما الخطوة الصغيرة التي ستقوم بها؟",
+        "actionPlaceholder": "مثال: البحث عن معلومات، وضع خطة بسيطة"
+      }
+    },
+    "step5": {
+      "stepLabel": "الخطوة 5 / 5",
+      "title": "مراجعة الإجابات",
+      "description": "راجع إجاباتك، وافق على الشروط، ثم ابدأ الإنشاء.",
+      "generate": "إنشاء",
+      "terms": "شروط الاستخدام",
+      "and": " و ",
+      "privacy": "سياسة الخصوصية",
+      "agreeSuffix": " أوافق",
+      "sections": {
+        "basic": "المعلومات الأساسية",
+        "style": "الأسلوب المفضل",
+        "vision": "أنت ومستقبلك",
+        "lifeDesign": "تصميم الحياة"
+      }
+    }
+  },
+  "loadingPage": {
+    "title": "جارٍ التحميل...",
+    "messages": [
+      "نرسم مستقبلك...",
+      "نبني رؤيتك...",
+      "اقتربنا من الانتهاء..."
+    ]
+  },
+  "result": {
+    "label": "النتيجة",
+    "title": "لوحة رؤيتك جاهزة",
+    "actions": {
+      "save": "حفظ",
+      "link": "رابط",
+      "x": "X",
+      "instagram": "Instagram"
+    }
+  },
+  "language": {
+    "title": "اختر اللغة",
+    "description": "اختر اللغة التي تريد استخدامها.",
+    "continue": "متابعة",
+    "options": {
+      "ja": "日本語",
+      "en": "English",
+      "hiragana": "ひらがな",
+      "fr": "Français",
+      "de": "Deutsch",
+      "hi": "हिन्दी",
+      "id": "Bahasa Indonesia",
+      "it": "Italiano",
+      "ko": "한국어",
+      "pt-BR": "Português (Brasil)",
+      "es-419": "Español (Latinoamérica)",
+      "es": "Español (España)",
+      "zh-CN": "简体中文",
+      "zh-TW": "繁體中文",
+      "ar": "العربية"
+    }
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "common": {
+    "back": "Back",
+    "next": "Next",
+    "optional": "Optional",
+    "topBannerAlt": "Top banner",
+    "bottomBannerAlt": "Bottom banner"
+  },
+  "login": {
+    "label": "PASSWORD",
+    "title": "Enter Passcode",
+    "description": "Enter the passcode to start your experience.",
+    "passwordLabel": "Passcode",
+    "passwordPlaceholder": "Enter passcode",
+    "continue": "Next",
+    "errors": {
+      "missingPasscode": "Passcode setting was not found. Please check REACT_APP_PASSCODE.",
+      "wrongPasscode": "The passcode is incorrect."
+    }
+  },
+  "form": {
+    "step1": {
+      "stepLabel": "STEP 1 / 4",
+      "title": "About You",
+      "description": "Please enter the basic information that will be reflected in your vision board.",
+      "fullName": "Name",
+      "fullNamePlaceholder": "e.g. Hanako Yamada",
+      "email": "Email Address",
+      "emailPlaceholder": "ikigai@gmail.com",
+      "age": "Age",
+      "agePlaceholder": "e.g. 25",
+      "gender": "Gender",
+      "genderOptions": {
+        "select": "Please select",
+        "male": "Male",
+        "female": "Female",
+        "nonBinary": "Non-binary",
+        "preferNotToSay": "Prefer not to say"
+      },
+      "hairAppearance": "Hair / Appearance",
+      "hairAppearancePlaceholder": "e.g. long black hair, curly hair, tall",
+      "charmPoints": "Charm Points / Features",
+      "charmPointsPlaceholder": "e.g. smile, dimples, bright eyes"
+    },
+    "step2": {
+      "stepLabel": "STEP 2 / 4",
+      "title": "Your Favorite Mood",
+      "description": "Choosing colors and a visual style helps create a world that feels more like you.",
+      "favoriteColors": "Favorite Colors (up to 3)",
+      "favoriteColorsPlaceholder": "e.g. pink, light blue, white",
+      "imageStyle": "Image Style",
+      "recommended": "Recommended",
+      "imageStyleOptions": {
+        "watercolor": "Watercolor",
+        "graphicRecording": "Graphic Recording",
+        "realistic": "Realistic",
+        "artistic": "Artistic",
+        "comic": "Comic",
+        "anime": "Anime"
+      }
+    },
+    "step3": {
+      "stepLabel": "STEP 3 / 5",
+      "title": "You and Your Future",
+      "description": "Tell us who you are now and the future you want to create.",
+      "selfExpression": "What Makes You You",
+      "selfExpressionHelper": "Write as specifically as possible about what you like, your personality, and the values you care about.",
+      "selfExpressionPlaceholder": "e.g. I love the outdoors, I am curious, I enjoy making things, I value freedom in how I work",
+      "idealVision": "The Future You Want to Create",
+      "idealVisionPlaceholder": "e.g. In one year, I want to work in Tokyo in my own way. In ten years, I want to have an atelier near nature."
+    },
+    "step4": {
+      "stepLabel": "STEP 4 / 5",
+      "title": "Add More Depth",
+      "lifeDesignTitle": "Life Design",
+      "description": "Optional. Choose the areas you want to reflect more deeply and fill them in.",
+      "identity": {
+        "title": "My Core",
+        "helper": "Fill this in only if you want the result to feel even more like you.",
+        "happyMoment": "A recent happy moment",
+        "happyMomentPlaceholder": "e.g. traveled with friends, started something new",
+        "strengths": "Strengths",
+        "strengthsPlaceholder": "e.g. consistency, empathy, creativity"
+      },
+      "learn": {
+        "title": "Learning",
+        "helper": "Organize what you want to learn and why you want to learn it.",
+        "want": "What do you want to learn?",
+        "wantPlaceholder": "e.g. English, design, cooking",
+        "reason": "Why do you want to learn it?",
+        "reasonPlaceholder": "e.g. career growth, hobby, personal growth",
+        "whenWhere": "When and where do you want to learn?",
+        "whenWherePlaceholder": "e.g. online, weekends, studying abroad"
+      },
+      "work": {
+        "title": "Work",
+        "helper": "Clarify your ideal work and working style.",
+        "style": "What kind of work or working style do you want?",
+        "stylePlaceholder": "e.g. entrepreneurship, freelance, company employee",
+        "values": "What do you value at work?",
+        "valuesPlaceholder": "e.g. purpose, income, freedom",
+        "incomePlace": "What is your ideal income or work location?",
+        "incomePlacePlaceholder": "e.g. ¥10M/year, remote work, overseas"
+      },
+      "residence": {
+        "title": "Lifestyle",
+        "helper": "Organize where and how you want to live.",
+        "place": "Where do you want to live?",
+        "placePlaceholder": "e.g. city, countryside, overseas",
+        "environment": "What kind of home or environment do you want?",
+        "environmentPlaceholder": "e.g. spacious home, close to nature, convenient location"
+      },
+      "marriage": {
+        "title": "Partnership",
+        "helper": "Organize your thoughts about partnership and marriage.",
+        "idealRelation": "What is your ideal relationship with a partner?",
+        "idealRelationPlaceholder": "e.g. supportive, respectful, fun relationship",
+        "thoughts": "How do you feel about marriage or living together?",
+        "thoughtsPlaceholder": "e.g. I want to get married, I want to consider living together first"
+      },
+      "child": {
+        "title": "Children / Parenting",
+        "helper": "Organize your thoughts about children and parenting.",
+        "thoughts": "How do you feel about having children?",
+        "thoughtsPlaceholder": "e.g. I want children, not sure yet, no strong preference",
+        "values": "What would you value in parenting?",
+        "valuesPlaceholder": "e.g. individuality, kindness, freedom"
+      },
+      "oldAge": {
+        "title": "Later Life",
+        "helper": "Think about your ideal later life and what you want to prepare now.",
+        "ideal": "What is your ideal senior life?",
+        "idealPlaceholder": "e.g. peaceful life, travel, time with family",
+        "preparation": "What do you want to prepare for later life?",
+        "preparationPlaceholder": "e.g. savings, healthy habits, relationships"
+      },
+      "nextAction": {
+        "title": "Next Action",
+        "helper": "Writing one small step you can take this month makes it easier to take action.",
+        "action": "What is one small step you can take this month?",
+        "actionPlaceholder": "e.g. plan a new route, start gathering information"
+      }
+    },
+    "step5": {
+      "stepLabel": "STEP 5 / 5",
+      "title": "Review Your Answers",
+      "description": "Please review your answers, agree to the terms, and continue to generation.",
+      "generate": "Generate",
+      "terms": "Terms of Use",
+      "and": " and ",
+      "privacy": "Privacy Policy",
+      "agreeSuffix": "",
+      "sections": {
+        "basic": "Basic Information",
+        "style": "Favorite Mood",
+        "vision": "You and Your Future",
+        "lifeDesign": "Life Design"
+      },
+      "items": {
+        "fullName": "Name",
+        "email": "Email Address",
+        "age": "Age",
+        "gender": "Gender",
+        "hairAppearance": "Hair / Appearance",
+        "charmPoints": "Charm Points / Features",
+        "favoriteColors": "Favorite Colors",
+        "imageStyle": "Image Style",
+        "selfExpression": "What Makes You You",
+        "idealVision": "The Future You Want to Create",
+        "happyMoment": "A recent happy moment",
+        "strengths": "Strengths",
+        "learnWant": "What you want to learn",
+        "learnReason": "Reason for learning",
+        "learnWhenWhere": "When / where to learn",
+        "workStyle": "Work / working style",
+        "workValues": "Values at work",
+        "workIdealIncomePlace": "Ideal income / work location",
+        "residencePlace": "Where you want to live",
+        "residenceEnvironment": "Ideal home / environment",
+        "marriageIdealRelation": "Ideal relationship",
+        "marriageThoughts": "Marriage / living together",
+        "childThoughts": "Thoughts about children",
+        "childValues": "Values in parenting",
+        "oldAgeIdeal": "Ideal later life",
+        "oldAgePreparation": "Preparation for later life",
+        "nextAction": "Next Action"
+      }
+    }
+  },
+  "loadingPage": {
+    "title": "Loading...",
+    "messages": [
+      "Drawing your future...",
+      "Building your vision...",
+      "Almost ready..."
+    ],
+    "errors": {
+      "missingData": "Input data was not found.",
+      "imageGenerationFailed": "Image generation failed.",
+      "dbSaveFailed": "Database save failed: {{message}}",
+      "generationFailed": "Generation failed. Please try again."
+    }
+  },
+  "result": {
+    "label": "RESULT",
+    "title": "Your Vision Board Is Ready",
+    "generatedImageAlt": "Generated vision board image",
+    "expandedImageAlt": "Expanded vision board image",
+    "closeModal": "Close image",
+    "noImage": "No generated image was found.",
+    "actions": {
+      "save": "Save",
+      "link": "Link",
+      "x": "X",
+      "instagram": "Instagram"
+    },
+    "share": {
+      "text": "I created my AI Vision Board!",
+      "hashtags": "AIVisionBoard,ikigAI",
+      "linkCopied": "Link copied!",
+      "linkCopiedForInstagram": "Link copied. Instagram will open now.",
+      "copyFailed": "Copy failed.",
+      "downloadFailed": "Failed to save the image."
+    },
+    "feedback": {
+      "thankYou": "Thank you for your feedback!",
+      "saved": "Your answer has been saved.",
+      "satisfaction": "How was your vision board?",
+      "reasonLabel": "Share your thoughts if you like (optional)",
+      "reasonPlaceholder": "Tell us what you liked or what you would like to change.",
+      "submit": "Submit",
+      "submitting": "Submitting...",
+      "selectRatingAlert": "Please select your satisfaction level.",
+      "submitFailed": "Failed to submit your answer.\nReason: {{message}}",
+      "options": {
+        "verySatisfied": "Very satisfied",
+        "satisfied": "Satisfied",
+        "neutral": "Neutral",
+        "unsatisfied": "Unsatisfied",
+        "veryUnsatisfied": "Very unsatisfied"
+      }
+    }
+  },
+  "language": {
+    "title": "Select Your Language",
+    "description": "Choose the language you want to use.",
+    "continue": "Continue",
+    "options": {
+      "ja": "日本語",
+      "en": "English"
+    }
+  }
+}

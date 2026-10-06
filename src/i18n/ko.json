@@ -1,0 +1,195 @@
+{
+  "common": {
+    "back": "뒤로",
+    "next": "다음",
+    "optional": "선택",
+    "topBannerAlt": "상단 배너",
+    "bottomBannerAlt": "하단 배너"
+  },
+  "login": {
+    "label": "비밀번호",
+    "title": "비밀번호를 입력하세요",
+    "description": "시작하려면 비밀번호를 입력하세요.",
+    "passwordLabel": "비밀번호",
+    "passwordPlaceholder": "비밀번호 입력",
+    "continue": "다음",
+    "errors": {
+      "missingPasscode": "비밀번호 설정을 찾을 수 없습니다. REACT_APP_PASSCODE를 확인하세요.",
+      "wrongPasscode": "비밀번호가 올바르지 않습니다."
+    }
+  },
+  "form": {
+    "step1": {
+      "stepLabel": "STEP 1 / 4",
+      "title": "당신에 대해",
+      "description": "비전 보드에 반영될 기본 정보를 입력하세요.",
+      "fullName": "이름",
+      "fullNamePlaceholder": "예: Hanako Yamada",
+      "email": "이메일",
+      "emailPlaceholder": "ikigai@gmail.com",
+      "age": "나이",
+      "agePlaceholder": "예: 25",
+      "gender": "성별",
+      "genderOptions": {
+        "select": "선택하세요",
+        "male": "남성",
+        "female": "여성",
+        "nonBinary": "논바이너리",
+        "preferNotToSay": "답변하지 않음"
+      },
+      "hairAppearance": "머리 / 외모",
+      "hairAppearancePlaceholder": "예: 긴 검은 머리, 곱슬머리, 키가 큼",
+      "charmPoints": "매력 포인트",
+      "charmPointsPlaceholder": "예: 미소, 보조개, 큰 눈"
+    },
+    "step2": {
+      "stepLabel": "STEP 2 / 4",
+      "title": "좋아하는 분위기",
+      "description": "색상과 스타일을 선택하면 당신만의 느낌을 더 잘 표현할 수 있습니다.",
+      "favoriteColors": "좋아하는 색 (최대 3개)",
+      "favoriteColorsPlaceholder": "예: 핑크, 하늘색, 흰색",
+      "imageStyle": "이미지 스타일",
+      "recommended": "추천",
+      "imageStyleOptions": {
+        "watercolor": "수채화",
+        "graphicRecording": "그래픽 스타일",
+        "realistic": "리얼",
+        "artistic": "아트",
+        "comic": "만화",
+        "anime": "애니메이션"
+      }
+    },
+    "step3": {
+      "stepLabel": "STEP 3 / 5",
+      "title": "당신과 미래",
+      "description": "지금의 당신과 이루고 싶은 미래를 알려주세요.",
+      "selfExpression": "당신의 특징",
+      "selfExpressionHelper": "좋아하는 것, 성격, 가치관을 구체적으로 적어주세요.",
+      "selfExpressionPlaceholder": "예: 자연을 좋아함, 호기심 많음, 만들기를 좋아함, 자유로운 삶을 원함",
+      "idealVision": "이루고 싶은 미래",
+      "idealVisionPlaceholder": "예: 1년 후 도쿄에서 일하고 싶음, 10년 후 자연 속 스튜디오를 갖고 싶음"
+    },
+    "step4": {
+      "stepLabel": "STEP 4 / 5",
+      "title": "더 깊이 설정",
+      "lifeDesignTitle": "라이프 디자인",
+      "description": "선택 사항입니다. 더 반영하고 싶은 부분만 입력하세요.",
+      "identity": {
+        "title": "나 자신",
+        "helper": "더 개인적인 결과를 원할 때 입력하세요.",
+        "happyMoment": "최근 행복했던 순간",
+        "happyMomentPlaceholder": "예: 친구와 여행",
+        "strengths": "강점",
+        "strengthsPlaceholder": "예: 꾸준함, 공감 능력"
+      },
+      "learn": {
+        "title": "배움",
+        "helper": "무엇을 배우고 싶은지 정리하세요.",
+        "want": "무엇을 배우고 싶나요?",
+        "wantPlaceholder": "예: 영어, 디자인",
+        "reason": "왜 배우고 싶나요?",
+        "reasonPlaceholder": "예: 커리어, 취미",
+        "whenWhere": "언제 어디서?",
+        "whenWherePlaceholder": "예: 온라인, 주말"
+      },
+      "work": {
+        "title": "일",
+        "helper": "이상적인 일을 생각해보세요.",
+        "style": "어떤 일을 원하나요?",
+        "stylePlaceholder": "예: 프리랜서, 창업",
+        "values": "중요한 가치",
+        "valuesPlaceholder": "예: 자유, 수입",
+        "incomePlace": "수입 / 장소",
+        "incomePlacePlaceholder": "예: 재택근무"
+      },
+      "residence": {
+        "title": "생활",
+        "helper": "어디서 살고 싶은지 생각해보세요.",
+        "place": "살고 싶은 곳",
+        "placePlaceholder": "예: 도시, 해외",
+        "environment": "환경",
+        "environmentPlaceholder": "예: 자연 근처"
+      },
+      "marriage": {
+        "title": "관계",
+        "helper": "이상적인 관계를 생각해보세요.",
+        "idealRelation": "이상적인 관계",
+        "idealRelationPlaceholder": "예: 서로 지원",
+        "thoughts": "결혼에 대한 생각",
+        "thoughtsPlaceholder": "예: 결혼하고 싶음"
+      },
+      "child": {
+        "title": "아이",
+        "helper": "아이에 대한 생각",
+        "thoughts": "아이에 대해 어떻게 생각하나요?",
+        "thoughtsPlaceholder": "예: 아이를 원함",
+        "values": "교육 가치",
+        "valuesPlaceholder": "예: 자유"
+      },
+      "oldAge": {
+        "title": "미래",
+        "helper": "앞으로의 삶",
+        "ideal": "이상적인 미래",
+        "idealPlaceholder": "예: 평화로운 삶",
+        "preparation": "준비",
+        "preparationPlaceholder": "예: 저축"
+      },
+      "nextAction": {
+        "title": "다음 행동",
+        "helper": "이번 달 작은 한 걸음",
+        "action": "무엇을 할 건가요?",
+        "actionPlaceholder": "예: 조사 시작"
+      }
+    },
+    "step5": {
+      "stepLabel": "STEP 5 / 5",
+      "title": "내용 확인",
+      "description": "입력한 내용을 확인하세요.",
+      "generate": "생성하기",
+      "terms": "이용약관",
+      "and": " 및 ",
+      "privacy": "개인정보 처리방침",
+      "agreeSuffix": "에 동의합니다",
+      "sections": {
+        "basic": "기본 정보",
+        "style": "스타일",
+        "vision": "미래",
+        "lifeDesign": "라이프 디자인"
+      }
+    }
+  },
+  "loadingPage": {
+    "title": "로딩 중...",
+    "messages": [
+      "당신의 미래를 그리고 있습니다...",
+      "비전을 만들고 있습니다...",
+      "곧 완료됩니다..."
+    ]
+  },
+  "result": {
+    "label": "결과",
+    "title": "비전 보드가 완성되었습니다",
+    "actions": {
+      "save": "저장",
+      "link": "링크",
+      "x": "X",
+      "instagram": "Instagram"
+    }
+  },
+  "language": {
+    "title": "언어 선택",
+    "description": "사용할 언어를 선택하세요.",
+    "continue": "다음",
+    "options": {
+      "ja": "日本語",
+      "en": "English",
+      "hiragana": "ひらがな",
+      "fr": "Français",
+      "de": "Deutsch",
+      "hi": "हिन्दी",
+      "id": "Bahasa Indonesia",
+      "it": "Italiano",
+      "ko": "한국어"
+    }
+  }
+}

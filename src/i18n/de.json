@@ -1,0 +1,256 @@
+{
+  "common": {
+    "back": "Zurück",
+    "next": "Weiter",
+    "optional": "Optional",
+    "topBannerAlt": "Oberes Banner",
+    "bottomBannerAlt": "Unteres Banner"
+  },
+  "login": {
+    "label": "PASSWORT",
+    "title": "Passcode eingeben",
+    "description": "Gib den Passcode ein, um die Erfahrung zu starten.",
+    "passwordLabel": "Passcode",
+    "passwordPlaceholder": "Passcode eingeben",
+    "continue": "Weiter",
+    "errors": {
+      "missingPasscode": "Die Passcode-Einstellung wurde nicht gefunden. Bitte überprüfe REACT_APP_PASSCODE.",
+      "wrongPasscode": "Der Passcode ist falsch."
+    }
+  },
+  "form": {
+    "step1": {
+      "stepLabel": "SCHRITT 1 / 4",
+      "title": "Über dich",
+      "description": "Gib die grundlegenden Informationen ein, die in deinem Vision Board berücksichtigt werden.",
+      "fullName": "Name",
+      "fullNamePlaceholder": "z. B. Hanako Yamada",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "ikigai@gmail.com",
+      "age": "Alter",
+      "agePlaceholder": "z. B. 25",
+      "gender": "Geschlecht",
+      "genderOptions": {
+        "select": "Bitte auswählen",
+        "male": "Männlich",
+        "female": "Weiblich",
+        "nonBinary": "Nicht-binär",
+        "preferNotToSay": "Keine Angabe"
+      },
+      "hairAppearance": "Haare / Aussehen",
+      "hairAppearancePlaceholder": "z. B. lange schwarze Haare, lockige Haare, groß",
+      "charmPoints": "Charme / besondere Merkmale",
+      "charmPointsPlaceholder": "z. B. Lächeln, Grübchen, große Augen"
+    },
+    "step2": {
+      "stepLabel": "SCHRITT 2 / 4",
+      "title": "Deine Lieblingsstimmung",
+      "description": "Farben und Bildstil helfen dabei, eine Welt zu schaffen, die sich nach dir anfühlt.",
+      "favoriteColors": "Lieblingsfarben (bis zu 3)",
+      "favoriteColorsPlaceholder": "z. B. Rosa, Hellblau, Weiß",
+      "imageStyle": "Bildstil",
+      "recommended": "Empfohlen",
+      "imageStyleOptions": {
+        "watercolor": "Aquarell",
+        "graphicRecording": "Graphic Recording",
+        "realistic": "Realistisch",
+        "artistic": "Künstlerisch",
+        "comic": "Comic",
+        "anime": "Anime"
+      }
+    },
+    "step3": {
+      "stepLabel": "SCHRITT 3 / 5",
+      "title": "Du und deine Zukunft",
+      "description": "Erzähle uns, wer du heute bist und welche Zukunft du gestalten möchtest.",
+      "selfExpression": "Was dich ausmacht",
+      "selfExpressionHelper": "Beschreibe möglichst konkret, was du magst, wie deine Persönlichkeit ist und welche Werte dir wichtig sind.",
+      "selfExpressionPlaceholder": "z. B. Ich liebe die Natur, bin neugierig, erschaffe gern Dinge und lege Wert auf freies Arbeiten",
+      "idealVision": "Die Zukunft, die du gestalten möchtest",
+      "idealVisionPlaceholder": "z. B. In einem Jahr möchte ich in Tokio auf meine Art arbeiten. In zehn Jahren möchte ich ein Atelier in der Nähe der Natur haben."
+    },
+    "step4": {
+      "stepLabel": "SCHRITT 4 / 5",
+      "title": "Mehr Tiefe hinzufügen",
+      "lifeDesignTitle": "Lebensdesign",
+      "description": "Optional. Wähle die Bereiche aus, die stärker einfließen sollen, und fülle sie aus.",
+      "identity": {
+        "title": "Mein Kern",
+        "helper": "Nur ausfüllen, wenn das Ergebnis sich noch persönlicher anfühlen soll.",
+        "happyMoment": "Ein kürzlich glücklicher Moment",
+        "happyMomentPlaceholder": "z. B. Reise mit Freunden, etwas Neues begonnen",
+        "strengths": "Stärken",
+        "strengthsPlaceholder": "z. B. Ausdauer, Empathie, Kreativität"
+      },
+      "learn": {
+        "title": "Lernen",
+        "helper": "Ordne, was du lernen möchtest und warum.",
+        "want": "Was möchtest du lernen?",
+        "wantPlaceholder": "z. B. Englisch, Design, Kochen",
+        "reason": "Warum möchtest du es lernen?",
+        "reasonPlaceholder": "z. B. Karriereentwicklung, Hobby, persönliches Wachstum",
+        "whenWhere": "Wann und wo möchtest du lernen?",
+        "whenWherePlaceholder": "z. B. online, am Wochenende, im Ausland"
+      },
+      "work": {
+        "title": "Arbeit",
+        "helper": "Kläre deine ideale Arbeit und Arbeitsweise.",
+        "style": "Welche Arbeit oder Arbeitsweise wünschst du dir?",
+        "stylePlaceholder": "z. B. Unternehmertum, freiberuflich, angestellt",
+        "values": "Was ist dir bei der Arbeit wichtig?",
+        "valuesPlaceholder": "z. B. Sinn, Einkommen, Freiheit",
+        "incomePlace": "Was ist dein ideales Einkommen oder dein idealer Arbeitsort?",
+        "incomePlacePlaceholder": "z. B. 10 Mio. Yen/Jahr, Remote-Arbeit, Ausland"
+      },
+      "residence": {
+        "title": "Lebensstil",
+        "helper": "Ordne, wo und wie du leben möchtest.",
+        "place": "Wo möchtest du leben?",
+        "placePlaceholder": "z. B. Stadt, Land, Ausland",
+        "environment": "Welche Art von Zuhause oder Umgebung wünschst du dir?",
+        "environmentPlaceholder": "z. B. großes Haus, nah an der Natur, praktische Lage"
+      },
+      "marriage": {
+        "title": "Partnerschaft",
+        "helper": "Ordne deine Gedanken zu Partnerschaft und Ehe.",
+        "idealRelation": "Wie sieht deine ideale Beziehung mit einem Partner aus?",
+        "idealRelationPlaceholder": "z. B. unterstützend, respektvoll, fröhlich",
+        "thoughts": "Was denkst du über Ehe oder Zusammenleben?",
+        "thoughtsPlaceholder": "z. B. Ich möchte heiraten, ich möchte zuerst Zusammenleben überlegen"
+      },
+      "child": {
+        "title": "Kinder / Erziehung",
+        "helper": "Ordne deine Gedanken zu Kindern und Erziehung.",
+        "thoughts": "Wie denkst du über Kinder?",
+        "thoughtsPlaceholder": "z. B. Ich möchte Kinder, ich bin noch unsicher, keine starke Präferenz",
+        "values": "Was wäre dir bei der Erziehung wichtig?",
+        "valuesPlaceholder": "z. B. Individualität, Freundlichkeit, Freiheit"
+      },
+      "oldAge": {
+        "title": "Späteres Leben",
+        "helper": "Denke über dein ideales späteres Leben und die Vorbereitung dafür nach.",
+        "ideal": "Wie sieht dein ideales späteres Leben aus?",
+        "idealPlaceholder": "z. B. ruhiges Leben, Reisen, Zeit mit der Familie",
+        "preparation": "Was möchtest du für später vorbereiten?",
+        "preparationPlaceholder": "z. B. Ersparnisse, gesunde Gewohnheiten, Beziehungen"
+      },
+      "nextAction": {
+        "title": "Nächste Aktion",
+        "helper": "Ein kleiner Schritt, den du diesen Monat tun kannst, macht Handeln leichter.",
+        "action": "Welchen kleinen Schritt kannst du diesen Monat tun?",
+        "actionPlaceholder": "z. B. eine neue Route planen, Informationen sammeln"
+      }
+    },
+    "step5": {
+      "stepLabel": "SCHRITT 5 / 5",
+      "title": "Antworten überprüfen",
+      "description": "Überprüfe deine Antworten, stimme den Bedingungen zu und starte die Generierung.",
+      "generate": "Generieren",
+      "terms": "Nutzungsbedingungen",
+      "and": " und ",
+      "privacy": "Datenschutzerklärung",
+      "agreeSuffix": " zustimmen",
+      "sections": {
+        "basic": "Grundinformationen",
+        "style": "Lieblingsstimmung",
+        "vision": "Du und deine Zukunft",
+        "lifeDesign": "Lebensdesign"
+      },
+      "items": {
+        "fullName": "Name",
+        "email": "E-Mail-Adresse",
+        "age": "Alter",
+        "gender": "Geschlecht",
+        "hairAppearance": "Haare / Aussehen",
+        "charmPoints": "Charme / besondere Merkmale",
+        "favoriteColors": "Lieblingsfarben",
+        "imageStyle": "Bildstil",
+        "selfExpression": "Was dich ausmacht",
+        "idealVision": "Die Zukunft, die du gestalten möchtest",
+        "happyMoment": "Ein kürzlich glücklicher Moment",
+        "strengths": "Stärken",
+        "learnWant": "Was du lernen möchtest",
+        "learnReason": "Grund fürs Lernen",
+        "learnWhenWhere": "Wann / wo lernen",
+        "workStyle": "Arbeit / Arbeitsweise",
+        "workValues": "Werte bei der Arbeit",
+        "workIdealIncomePlace": "Ideales Einkommen / Arbeitsort",
+        "residencePlace": "Gewünschter Wohnort",
+        "residenceEnvironment": "Ideales Zuhause / Umgebung",
+        "marriageIdealRelation": "Ideale Beziehung",
+        "marriageThoughts": "Ehe / Zusammenleben",
+        "childThoughts": "Gedanken zu Kindern",
+        "childValues": "Werte in der Erziehung",
+        "oldAgeIdeal": "Ideales späteres Leben",
+        "oldAgePreparation": "Vorbereitung für später",
+        "nextAction": "Nächste Aktion"
+      }
+    }
+  },
+  "loadingPage": {
+    "title": "Wird geladen...",
+    "messages": [
+      "Deine Zukunft wird gezeichnet...",
+      "Deine Vision wird aufgebaut...",
+      "Fast fertig..."
+    ],
+    "errors": {
+      "missingData": "Die Eingabedaten wurden nicht gefunden.",
+      "imageGenerationFailed": "Die Bildgenerierung ist fehlgeschlagen.",
+      "dbSaveFailed": "Speichern in der Datenbank fehlgeschlagen: {{message}}",
+      "generationFailed": "Generierung fehlgeschlagen. Bitte versuche es erneut."
+    }
+  },
+  "result": {
+    "label": "ERGEBNIS",
+    "title": "Dein Vision Board ist fertig",
+    "generatedImageAlt": "Generiertes Vision-Board-Bild",
+    "expandedImageAlt": "Vergrößertes Vision-Board-Bild",
+    "closeModal": "Bild schließen",
+    "noImage": "Es wurde kein generiertes Bild gefunden.",
+    "actions": {
+      "save": "Speichern",
+      "link": "Link",
+      "x": "X",
+      "instagram": "Instagram"
+    },
+    "share": {
+      "text": "Ich habe mein AI Vision Board erstellt!",
+      "hashtags": "AIVisionBoard,ikigAI",
+      "linkCopied": "Link kopiert!",
+      "linkCopiedForInstagram": "Link kopiert. Instagram wird geöffnet.",
+      "copyFailed": "Kopieren fehlgeschlagen.",
+      "downloadFailed": "Das Bild konnte nicht gespeichert werden."
+    },
+    "feedback": {
+      "thankYou": "Danke für dein Feedback!",
+      "saved": "Deine Antwort wurde gespeichert.",
+      "satisfaction": "Wie gefällt dir dein Vision Board?",
+      "reasonLabel": "Teile deine Eindrücke, wenn du möchtest (optional)",
+      "reasonPlaceholder": "Sag uns, was dir gefallen hat oder was du ändern möchtest.",
+      "submit": "Senden",
+      "submitting": "Wird gesendet...",
+      "selectRatingAlert": "Bitte wähle deine Zufriedenheit aus.",
+      "submitFailed": "Deine Antwort konnte nicht gesendet werden.\nGrund: {{message}}",
+      "options": {
+        "verySatisfied": "Sehr zufrieden",
+        "satisfied": "Zufrieden",
+        "neutral": "Neutral",
+        "unsatisfied": "Eher unzufrieden",
+        "veryUnsatisfied": "Sehr unzufrieden"
+      }
+    }
+  },
+  "language": {
+    "title": "Sprache auswählen",
+    "description": "Wähle die Sprache, die du verwenden möchtest.",
+    "continue": "Weiter",
+    "options": {
+      "ja": "日本語",
+      "en": "English",
+      "hiragana": "ひらがな",
+      "fr": "Français",
+      "de": "Deutsch"
+    }
+  }
+}

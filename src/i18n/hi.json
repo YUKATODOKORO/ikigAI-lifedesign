@@ -1,0 +1,257 @@
+{
+  "common": {
+    "back": "वापस",
+    "next": "आगे",
+    "optional": "वैकल्पिक",
+    "topBannerAlt": "ऊपरी बैनर",
+    "bottomBannerAlt": "निचला बैनर"
+  },
+  "login": {
+    "label": "पासकोड",
+    "title": "पासकोड दर्ज करें",
+    "description": "शुरू करने के लिए पासकोड दर्ज करें।",
+    "passwordLabel": "पासकोड",
+    "passwordPlaceholder": "पासकोड दर्ज करें",
+    "continue": "आगे",
+    "errors": {
+      "missingPasscode": "पासकोड सेटिंग नहीं मिली। कृपया REACT_APP_PASSCODE जांचें।",
+      "wrongPasscode": "पासकोड गलत है।"
+    }
+  },
+  "form": {
+    "step1": {
+      "stepLabel": "चरण 1 / 4",
+      "title": "आपके बारे में",
+      "description": "कृपया वह बुनियादी जानकारी दर्ज करें जो आपके विज़न बोर्ड में दिखाई जाएगी।",
+      "fullName": "नाम",
+      "fullNamePlaceholder": "उदाहरण: Hanako Yamada",
+      "email": "ईमेल पता",
+      "emailPlaceholder": "ikigai@gmail.com",
+      "age": "उम्र",
+      "agePlaceholder": "उदाहरण: 25",
+      "gender": "लिंग",
+      "genderOptions": {
+        "select": "कृपया चुनें",
+        "male": "पुरुष",
+        "female": "महिला",
+        "nonBinary": "नॉन-बाइनरी",
+        "preferNotToSay": "नहीं बताना चाहता/चाहती"
+      },
+      "hairAppearance": "बाल / रूप-रंग",
+      "hairAppearancePlaceholder": "उदाहरण: लंबे काले बाल, घुंघराले बाल, लंबा कद",
+      "charmPoints": "खास बातें / आकर्षण",
+      "charmPointsPlaceholder": "उदाहरण: मुस्कान, डिंपल, चमकती आंखें"
+    },
+    "step2": {
+      "stepLabel": "चरण 2 / 4",
+      "title": "आपका पसंदीदा माहौल",
+      "description": "रंग और विज़ुअल स्टाइल चुनने से आपका विज़न बोर्ड और भी आपके जैसा बनेगा।",
+      "favoriteColors": "पसंदीदा रंग (अधिकतम 3)",
+      "favoriteColorsPlaceholder": "उदाहरण: गुलाबी, हल्का नीला, सफेद",
+      "imageStyle": "इमेज स्टाइल",
+      "recommended": "सुझावित",
+      "imageStyleOptions": {
+        "watercolor": "वॉटरकलर",
+        "graphicRecording": "ग्राफिक रिकॉर्डिंग",
+        "realistic": "रियलिस्टिक",
+        "artistic": "आर्टिस्टिक",
+        "comic": "कॉमिक",
+        "anime": "एनीमे"
+      }
+    },
+    "step3": {
+      "stepLabel": "चरण 3 / 5",
+      "title": "आप और आपका भविष्य",
+      "description": "हमें बताएं कि आप अभी कौन हैं और कैसा भविष्य बनाना चाहते हैं।",
+      "selfExpression": "आपकी पहचान",
+      "selfExpressionHelper": "आपको क्या पसंद है, आपका स्वभाव और आपके लिए जरूरी मूल्य — जितना हो सके साफ़ लिखें।",
+      "selfExpressionPlaceholder": "उदाहरण: मुझे आउटडोर पसंद है, मैं जिज्ञासु हूं, चीजें बनाना पसंद है, स्वतंत्र रूप से काम करना चाहता/चाहती हूं",
+      "idealVision": "आपका मनचाहा भविष्य",
+      "idealVisionPlaceholder": "उदाहरण: 1 साल बाद मैं टोक्यो में अपने तरीके से काम करना चाहता/चाहती हूं। 10 साल बाद प्रकृति के पास अपना स्टूडियो बनाना चाहता/चाहती हूं।"
+    },
+    "step4": {
+      "stepLabel": "चरण 4 / 5",
+      "title": "और गहराई जोड़ें",
+      "lifeDesignTitle": "लाइफ डिज़ाइन",
+      "description": "वैकल्पिक। जिन बातों को आप और गहराई से दिखाना चाहते हैं, उन्हें चुनकर भरें।",
+      "identity": {
+        "title": "मेरा आधार",
+        "helper": "अगर आप चाहते हैं कि परिणाम और ज्यादा आपके जैसा लगे, तो इसे भरें।",
+        "happyMoment": "हाल का खुशी वाला पल",
+        "happyMomentPlaceholder": "उदाहरण: दोस्तों के साथ यात्रा की, कुछ नया शुरू किया",
+        "strengths": "ताकतें",
+        "strengthsPlaceholder": "उदाहरण: निरंतरता, सहानुभूति, रचनात्मकता"
+      },
+      "learn": {
+        "title": "सीखना",
+        "helper": "आप क्या सीखना चाहते हैं और क्यों, इसे व्यवस्थित करें।",
+        "want": "आप क्या सीखना चाहते हैं?",
+        "wantPlaceholder": "उदाहरण: अंग्रेज़ी, डिज़ाइन, खाना बनाना",
+        "reason": "आप इसे क्यों सीखना चाहते हैं?",
+        "reasonPlaceholder": "उदाहरण: करियर ग्रोथ, शौक, आत्म-विकास",
+        "whenWhere": "कब और कहां सीखना चाहते हैं?",
+        "whenWherePlaceholder": "उदाहरण: ऑनलाइन, सप्ताहांत में, विदेश में"
+      },
+      "work": {
+        "title": "काम",
+        "helper": "अपने आदर्श काम और काम करने के तरीके को साफ़ करें।",
+        "style": "आप कैसा काम या वर्क स्टाइल चाहते हैं?",
+        "stylePlaceholder": "उदाहरण: उद्यमिता, फ्रीलांस, कंपनी जॉब",
+        "values": "काम में आपके लिए क्या जरूरी है?",
+        "valuesPlaceholder": "उदाहरण: अर्थपूर्ण काम, आय, स्वतंत्रता",
+        "incomePlace": "आपकी आदर्श आय या काम करने की जगह क्या है?",
+        "incomePlacePlaceholder": "उदाहरण: सालाना ¥10M, रिमोट वर्क, विदेश"
+      },
+      "residence": {
+        "title": "जीवनशैली",
+        "helper": "आप कहां और कैसे रहना चाहते हैं, इसे व्यवस्थित करें।",
+        "place": "आप कहां रहना चाहते हैं?",
+        "placePlaceholder": "उदाहरण: शहर, गांव, विदेश",
+        "environment": "आप कैसा घर या माहौल चाहते हैं?",
+        "environmentPlaceholder": "उदाहरण: बड़ा घर, प्रकृति के पास, सुविधाजनक जगह"
+      },
+      "marriage": {
+        "title": "पार्टनरशिप",
+        "helper": "पार्टनरशिप और शादी के बारे में अपने विचार व्यवस्थित करें।",
+        "idealRelation": "पार्टनर के साथ आपकी आदर्श रिलेशनशिप कैसी है?",
+        "idealRelationPlaceholder": "उदाहरण: साथ देने वाली, सम्मानपूर्ण, खुशहाल रिलेशनशिप",
+        "thoughts": "शादी या साथ रहने के बारे में आपका क्या विचार है?",
+        "thoughtsPlaceholder": "उदाहरण: शादी करना चाहता/चाहती हूं, पहले साथ रहने पर सोचना चाहता/चाहती हूं"
+      },
+      "child": {
+        "title": "बच्चे / पालन-पोषण",
+        "helper": "बच्चों और पालन-पोषण के बारे में अपने विचार व्यवस्थित करें।",
+        "thoughts": "बच्चों के बारे में आपका क्या विचार है?",
+        "thoughtsPlaceholder": "उदाहरण: बच्चे चाहता/चाहती हूं, अभी तय नहीं, कोई खास पसंद नहीं",
+        "values": "पालन-पोषण में आप किन बातों को महत्व देंगे?",
+        "valuesPlaceholder": "उदाहरण: व्यक्तित्व, दयालुता, स्वतंत्रता"
+      },
+      "oldAge": {
+        "title": "आगे का जीवन",
+        "helper": "अपने आगे के आदर्श जीवन और अभी से की जाने वाली तैयारी के बारे में सोचें।",
+        "ideal": "आपका आदर्श आगे का जीवन कैसा है?",
+        "idealPlaceholder": "उदाहरण: शांत जीवन, यात्रा, परिवार के साथ समय",
+        "preparation": "आगे के जीवन के लिए आप क्या तैयारी करना चाहते हैं?",
+        "preparationPlaceholder": "उदाहरण: बचत, स्वस्थ आदतें, रिश्ते"
+      },
+      "nextAction": {
+        "title": "अगला कदम",
+        "helper": "इस महीने उठाया जा सकने वाला एक छोटा कदम लिखने से कार्रवाई आसान होती है।",
+        "action": "इस महीने आप कौन सा छोटा कदम उठा सकते हैं?",
+        "actionPlaceholder": "उदाहरण: नया रास्ता प्लान करना, जानकारी इकट्ठा करना शुरू करना"
+      }
+    },
+    "step5": {
+      "stepLabel": "चरण 5 / 5",
+      "title": "अपने जवाब जांचें",
+      "description": "कृपया अपने जवाब जांचें, नियमों से सहमत हों और जनरेशन शुरू करें।",
+      "generate": "जनरेट करें",
+      "terms": "उपयोग की शर्तें",
+      "and": " और ",
+      "privacy": "प्राइवेसी पॉलिसी",
+      "agreeSuffix": " से सहमत हूं",
+      "sections": {
+        "basic": "बुनियादी जानकारी",
+        "style": "पसंदीदा माहौल",
+        "vision": "आप और आपका भविष्य",
+        "lifeDesign": "लाइफ डिज़ाइन"
+      },
+      "items": {
+        "fullName": "नाम",
+        "email": "ईमेल पता",
+        "age": "उम्र",
+        "gender": "लिंग",
+        "hairAppearance": "बाल / रूप-रंग",
+        "charmPoints": "खास बातें / आकर्षण",
+        "favoriteColors": "पसंदीदा रंग",
+        "imageStyle": "इमेज स्टाइल",
+        "selfExpression": "आपकी पहचान",
+        "idealVision": "आपका मनचाहा भविष्य",
+        "happyMoment": "हाल का खुशी वाला पल",
+        "strengths": "ताकतें",
+        "learnWant": "आप क्या सीखना चाहते हैं",
+        "learnReason": "सीखने का कारण",
+        "learnWhenWhere": "कब / कहां सीखना है",
+        "workStyle": "काम / वर्क स्टाइल",
+        "workValues": "काम में जरूरी मूल्य",
+        "workIdealIncomePlace": "आदर्श आय / काम की जगह",
+        "residencePlace": "रहने की मनचाही जगह",
+        "residenceEnvironment": "आदर्श घर / माहौल",
+        "marriageIdealRelation": "आदर्श रिलेशनशिप",
+        "marriageThoughts": "शादी / साथ रहना",
+        "childThoughts": "बच्चों पर विचार",
+        "childValues": "पालन-पोषण के मूल्य",
+        "oldAgeIdeal": "आगे का आदर्श जीवन",
+        "oldAgePreparation": "आगे के लिए तैयारी",
+        "nextAction": "अगला कदम"
+      }
+    }
+  },
+  "loadingPage": {
+    "title": "लोड हो रहा है...",
+    "messages": [
+      "आपका भविष्य बनाया जा रहा है...",
+      "आपका विज़न तैयार किया जा रहा है...",
+      "लगभग तैयार है..."
+    ],
+    "errors": {
+      "missingData": "इनपुट डेटा नहीं मिला।",
+      "imageGenerationFailed": "इमेज जनरेशन विफल रहा।",
+      "dbSaveFailed": "डेटाबेस सेव विफल रहा: {{message}}",
+      "generationFailed": "जनरेशन विफल रहा। कृपया फिर से कोशिश करें।"
+    }
+  },
+  "result": {
+    "label": "परिणाम",
+    "title": "आपका विज़न बोर्ड तैयार है",
+    "generatedImageAlt": "जनरेट किया गया विज़न बोर्ड चित्र",
+    "expandedImageAlt": "बड़ा किया गया विज़न बोर्ड चित्र",
+    "closeModal": "चित्र बंद करें",
+    "noImage": "कोई जनरेट की गई इमेज नहीं मिली।",
+    "actions": {
+      "save": "सेव",
+      "link": "लिंक",
+      "x": "X",
+      "instagram": "Instagram"
+    },
+    "share": {
+      "text": "मैंने अपना AI Vision Board बनाया!",
+      "hashtags": "AIVisionBoard,ikigAI",
+      "linkCopied": "लिंक कॉपी हो गया!",
+      "linkCopiedForInstagram": "लिंक कॉपी हो गया। अब Instagram खुलेगा।",
+      "copyFailed": "कॉपी विफल रही।",
+      "downloadFailed": "इमेज सेव नहीं हो सकी।"
+    },
+    "feedback": {
+      "thankYou": "आपके फीडबैक के लिए धन्यवाद!",
+      "saved": "आपका जवाब सेव हो गया है।",
+      "satisfaction": "आपको अपना विज़न बोर्ड कैसा लगा?",
+      "reasonLabel": "चाहें तो अपने विचार साझा करें (वैकल्पिक)",
+      "reasonPlaceholder": "हमें बताएं कि आपको क्या अच्छा लगा या आप क्या बदलना चाहेंगे।",
+      "submit": "भेजें",
+      "submitting": "भेजा जा रहा है...",
+      "selectRatingAlert": "कृपया संतुष्टि स्तर चुनें।",
+      "submitFailed": "आपका जवाब भेजा नहीं जा सका।\nकारण: {{message}}",
+      "options": {
+        "verySatisfied": "बहुत संतुष्ट",
+        "satisfied": "संतुष्ट",
+        "neutral": "सामान्य",
+        "unsatisfied": "थोड़ा असंतुष्ट",
+        "veryUnsatisfied": "बहुत असंतुष्ट"
+      }
+    }
+  },
+  "language": {
+    "title": "भाषा चुनें",
+    "description": "कृपया उपयोग करने वाली भाषा चुनें।",
+    "continue": "आगे",
+    "options": {
+      "ja": "日本語",
+      "en": "English",
+      "hiragana": "ひらがな",
+      "fr": "Français",
+      "de": "Deutsch",
+      "hi": "हिन्दी"
+    }
+  }
+}

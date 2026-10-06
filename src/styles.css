@@ -1,0 +1,385 @@
+/* ===== リセット・全体 ===== */
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --theme-primary: #5ccfc0;
+  --theme-primary-dark: #49bfaf;
+  --theme-primary-light: #dff7f3;
+  --theme-accent-blue: #6eb6e8;
+  --theme-text: #1f2937;
+  --theme-subtext: #6b7280;
+  --theme-border: #d9e4e8;
+  --theme-bg: #f7fbfb;
+  --theme-white: #ffffff;
+  --theme-gradient: linear-gradient(135deg, #6eb6e8 0%, #47d3b1 100%);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--theme-bg);
+  color: var(--theme-text);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== 共通ボタン ===== */
+.start-button {
+  background: var(--theme-gradient);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 12px 22px;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 16px rgba(76, 190, 176, 0.2);
+}
+
+.start-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(76, 190, 176, 0.26);
+}
+
+/* ===== タイトル・説明 ===== */
+h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--theme-text);
+  font-kerning: normal;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 0 16px;
+  line-height: 1.4;
+}
+
+.description {
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 0 16px;
+  line-height: 1.7;
+  width: 100%;
+  max-width: 760px;
+  color: var(--theme-subtext);
+}
+
+/* ===== フォーム ===== */
+form {
+  border: 8px solid var(--theme-accent-blue);
+  border-radius: 42px;
+  background: var(--theme-white);
+  margin: 20px 20px;
+  padding: 28px 28px 36px;
+  width: calc(100% - 40px);
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 10px 26px rgba(73, 211, 178, 0.12);
+}
+
+/* ===== ラベル ===== */
+label {
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--theme-text);
+  display: block;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* ===== 入力欄 ===== */
+input,
+textarea,
+select {
+  width: 100%;
+  max-width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 18px;
+  border: 2px solid #111111;
+  border-radius: 18px;
+  font-size: 16px;
+  color: var(--theme-text);
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+  background: var(--theme-white);
+  outline: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+  min-height: 56px;
+  border-radius: 999px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+  border-radius: 24px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--theme-primary);
+  box-shadow: 0 0 0 4px rgba(92, 207, 192, 0.16);
+}
+
+/* ===== 送信ボタン ===== */
+input[type="submit"] {
+  background: var(--theme-gradient);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 12px 22px;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 16px rgba(76, 190, 176, 0.2);
+}
+
+input[type="submit"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(76, 190, 176, 0.26);
+}
+
+#generateButton {
+  padding: 0 14px;
+  height: 54px;
+  line-height: 1;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+#generateButton:disabled,
+input[type="submit"]:disabled,
+button:disabled {
+  background: #bfe8e1 !important;
+  color: #ffffff !important;
+  cursor: not-allowed !important;
+  box-shadow: none !important;
+  opacity: 0.85;
+}
+
+/* ===== 画像結果 ===== */
+#imageResult {
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+#generatedImage {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+/* ===== プライバシー表示 ===== */
+#privacyPolicyLabel {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+#privacyText {
+  flex: 1;
+}
+
+/* ===== 古い言語切替（残してOK） ===== */
+.language-switch {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+.language-switch button {
+  all: unset;
+  font-weight: 700;
+  color: var(--theme-text);
+  cursor: pointer;
+  font-size: 1em;
+  transition: color 0.2s ease;
+}
+
+.language-switch button:hover {
+  color: var(--theme-primary-dark);
+  text-decoration: underline;
+}
+
+.lang-toggle {
+  margin: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid var(--theme-border);
+  display: inline-block;
+  border-radius: 10px;
+}
+
+/* ===== タブレット ===== */
+@media (max-width: 1024px) {
+  form {
+    width: calc(100% - 32px);
+    margin: 16px;
+    padding: 24px 22px 32px;
+    border-radius: 34px;
+    border-width: 7px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 0.98rem;
+  }
+}
+
+/* ===== スマホ ===== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.25rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    margin-bottom: 10px;
+  }
+
+  form {
+    width: calc(100% - 24px);
+    margin: 12px;
+    padding: 18px 14px 24px;
+    border-radius: 28px;
+    border-width: 6px;
+  }
+
+  label {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  select {
+    min-height: 52px;
+  }
+
+  textarea {
+    min-height: 110px;
+  }
+
+  #privacyPolicyLabel {
+    width: 100%;
+    font-size: 0.92rem;
+    gap: 8px;
+  }
+
+  #generateButton {
+    max-width: 100%;
+    font-size: 1.05rem !important;
+    height: 50px;
+  }
+
+  #generatedImage {
+    max-width: 88vw !important;
+  }
+
+  .language-switch {
+    justify-content: center;
+    padding: 8px;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+  }
+}
+
+/* ===== 小さめスマホ ===== */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.12rem;
+    line-height: 1.45;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  form {
+    width: calc(100% - 16px);
+    margin: 8px;
+    padding: 16px 12px 22px;
+    border-radius: 24px;
+    border-width: 5px;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+    padding: 11px 12px;
+    margin-bottom: 14px;
+  }
+
+  #generateButton {
+    font-size: 1rem !important;
+    height: 48px;
+  }
+
+  #privacyPolicyLabel {
+    font-size: 0.88rem;
+  }
+}
