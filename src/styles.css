@@ -383,3 +383,15 @@ button:disabled {
     font-size: 0.88rem;
   }
 }
+
+/* ===== 流れるバナー（マーキー） ===== */
+.scrolling-banner { width: 100%; overflow: hidden; height: 170px; }
+@media (min-width: 768px) { .scrolling-banner { height: 250px; } }
+.scrolling-banner__track { display: flex; width: max-content; height: 100%; }
+.scrolling-banner__track img { height: 100%; width: auto; display: block; }
+.scrolling-banner__track--left { animation: banner-scroll-left 45s linear infinite; }
+.scrolling-banner__track--right { animation: banner-scroll-right 45s linear infinite; }
+/* 4枚つなぎなので1枚ぶん＝25%移動でシームレスにループ */
+@keyframes banner-scroll-left { from { transform: translateX(0); } to { transform: translateX(-25%); } }
+@keyframes banner-scroll-right { from { transform: translateX(-25%); } to { transform: translateX(0); } }
+@media (prefers-reduced-motion: reduce) { .scrolling-banner__track { animation: none; } }

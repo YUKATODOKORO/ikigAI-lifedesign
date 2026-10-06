@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "../i18n/configs";
 import topBanner from "../assets/header.png";
+import ScrollingBanner from "../components/ScrollingBanner";
 import bottomBanner from "../assets/footer.png";
 import { theme } from "../theme";
 
@@ -27,7 +28,7 @@ const ThanksPage: React.FC = () => {
         backgroundColor: theme.background,
       }}
     >
-      <img src={topBanner} alt="トップバナー" style={{ maxWidth: "100%" }} />
+      <ScrollingBanner src={topBanner} direction="left" />
 
       <div
         style={{
@@ -101,11 +102,7 @@ const ThanksPage: React.FC = () => {
         </button>
       </div>
 
-      <img
-        src={bottomBanner}
-        alt="ボトムバナー"
-        style={{ maxWidth: "100%", paddingTop: "20px" }}
-      />
+      <ScrollingBanner src={bottomBanner} direction="right" />
     </div>
   );
 };

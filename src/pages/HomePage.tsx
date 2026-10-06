@@ -2,6 +2,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import topBanner from "../assets/header.png";
+import ScrollingBanner from "../components/ScrollingBanner";
 import bottomBanner from "../assets/footer.png";
 import { theme } from "../theme";
 
@@ -18,7 +19,7 @@ const HomePage: React.FC = () => {
       }}
     >
       {/* Top Banner */}
-      <img src={topBanner} alt="top banner" style={{ maxWidth: "100%" }} />
+      <ScrollingBanner src={topBanner} direction="left" />
 
       {/* Main Content */}
       <div
@@ -61,7 +62,7 @@ const HomePage: React.FC = () => {
       </div>
 
       {/* Bottom Banner */}
-      <img src={bottomBanner} alt="bottom banner" style={{ maxWidth: "100%" }} />
+      <ScrollingBanner src={bottomBanner} direction="right" />
     </div>
   );
 };

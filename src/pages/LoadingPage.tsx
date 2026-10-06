@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import "../i18n/configs";
 import "../styles.css";
 import topBanner from "../assets/header.png";
+import ScrollingBanner from "../components/ScrollingBanner";
 import bottomBanner from "../assets/footer.png";
 import GrowingTreeLoading from "../components/GrowingTreeLoading";
 import { postToGas } from "../config";
@@ -111,22 +112,14 @@ const LoadingPage: React.FC = () => {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <img
-        src={topBanner}
-        alt={t("common.topBannerAlt")}
-        style={{ maxWidth: "100%" }}
-      />
+      <ScrollingBanner src={topBanner} direction="left" />
 
       <h2>{t("loadingPage.title")}</h2>
       <GrowingTreeLoading lang={i18n.language} />
 
       <p>{messages[loadingTextIndex]}</p>
 
-      <img
-        src={bottomBanner}
-        alt={t("common.bottomBannerAlt")}
-        style={{ maxWidth: "100%" }}
-      />
+      <ScrollingBanner src={bottomBanner} direction="right" />
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import "../i18n/configs";
 import "../styles.css";
 import topBanner from "../assets/header.png";
+import ScrollingBanner from "../components/ScrollingBanner";
 import bottomBanner from "../assets/footer.png";
 import StepNavigation from "../components/StepNavigation";
 import { theme } from "../theme";
@@ -347,7 +348,7 @@ const FormStep4Page: React.FC = () => {
         backgroundColor: theme.background,
       }}
     >
-      <img src={topBanner} alt={t("common.topBannerAlt")} style={{ maxWidth: "100%" }} />
+      <ScrollingBanner src={topBanner} direction="left" />
 
       <div
         style={{
@@ -730,11 +731,7 @@ const FormStep4Page: React.FC = () => {
         </form>
       </div>
 
-      <img
-        src={bottomBanner}
-        alt={t("common.bottomBannerAlt")}
-        style={{ maxWidth: "100%" }}
-      />
+      <ScrollingBanner src={bottomBanner} direction="right" />
     </div>
   );
 };

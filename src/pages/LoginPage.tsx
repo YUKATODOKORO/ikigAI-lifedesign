@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "../i18n/configs";
 import topBanner from "../assets/header.png";
+import ScrollingBanner from "../components/ScrollingBanner";
 import bottomBanner from "../assets/footer.png";
 import { theme } from "../theme";
 import { postToGas } from "../config";
@@ -64,11 +65,7 @@ const LoginPage: React.FC = () => {
         textAlign: "center",
       }}
     >
-      <img
-        src={topBanner}
-        alt={t("common.topBannerAlt")}
-        style={{ maxWidth: "100%" }}
-      />
+      <ScrollingBanner src={topBanner} direction="left" />
 
       <div
         style={{
@@ -172,11 +169,7 @@ const LoginPage: React.FC = () => {
         </div>
       </div>
 
-      <img
-        src={bottomBanner}
-        alt={t("common.bottomBannerAlt")}
-        style={{ maxWidth: "100%" }}
-      />
+      <ScrollingBanner src={bottomBanner} direction="right" />
     </div>
   );
 };
