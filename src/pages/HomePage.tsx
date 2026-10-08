@@ -16,17 +16,25 @@ const HomePage: React.FC = () => {
         minHeight: "100vh",
         backgroundColor: theme.background,
         textAlign: "center",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
       {/* Top Banner */}
       <ScrollingBanner src={topBanner} direction="left" />
 
-      {/* Main Content */}
+      {/* Main Content（上下バナーの間を埋めて縦中央に配置） */}
       <div
         style={{
+          flex: 1,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
           maxWidth: "720px",
           margin: "0 auto",
-          padding: "64px 16px",
+          padding: "48px 16px",
         }}
       >
         {/* Title */}
