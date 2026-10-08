@@ -65,12 +65,18 @@ const LoginPage: React.FC = () => {
         minHeight: "100vh",
         backgroundColor: theme.background,
         textAlign: "center",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
       <ScrollingBanner src={topBanner} direction="left" />
 
       <div
         style={{
+          flex: 1,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
           width: "100%",
           maxWidth: "720px",
           margin: "0 auto",

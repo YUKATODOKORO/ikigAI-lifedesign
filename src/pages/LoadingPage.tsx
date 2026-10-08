@@ -136,9 +136,28 @@ const LoadingPage: React.FC = () => {
   }) as string[];
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div
+      style={{
+        textAlign: "center",
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+      }}
+    >
       <ScrollingBanner src={topBanner} direction="left" />
 
+      {/* 上下バナーの間を埋めて縦中央に配置（下バナー下の余白を防ぐ） */}
+      <div
+        style={{
+          flex: 1,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+          padding: "24px 16px",
+        }}
+      >
       {view === "loading" ? (
         <>
           <h2>{t("loadingPage.title")}</h2>
@@ -177,6 +196,7 @@ const LoadingPage: React.FC = () => {
           </button>
         </div>
       )}
+      </div>
 
       <ScrollingBanner src={bottomBanner} direction="right" />
     </div>

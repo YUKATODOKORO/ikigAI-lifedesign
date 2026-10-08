@@ -32,6 +32,10 @@ const ThanksPage: React.FC = () => {
 
       <div
         style={{
+          flex: 1,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
           width: "100%",
           maxWidth: "720px",
           padding: "48px 16px 56px",
