@@ -2,7 +2,7 @@
   "name": "vision-board",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yukatodokoro.github.io/ikigAI-lifedesign",
+  "homepage": ".",
   "dependencies": {
     "@paypal/react-paypal-js": "^8.7.0",
     "@supabase/supabase-js": "^2.39.8",
