@@ -6,7 +6,7 @@ import topBanner from "../assets/header.png";
 import ScrollingBanner from "../components/ScrollingBanner";
 import bottomBanner from "../assets/footer.png";
 import { theme } from "../theme";
-import { postToGas } from "../config";
+import { postToGas, buildShareUrl } from "../config";
 
 const RESULT_IMAGE_KEY = "visionBoardGeneratedImageUrl";
 const RESULT_DRIVE_URL_KEY = "visionBoardDrivePageUrl";
@@ -132,7 +132,8 @@ const ResultPage: React.FC = () => {
   };
 
   const handleShareX = () => {
-    const shareUrl = drivePageUrl || window.location.href;
+    // Worker設定時はOGP付きシェアページ、未設定時は従来どおりDriveリンク
+    const shareUrl = buildShareUrl(drivePageUrl) || window.location.href;
     const text = t("result.share.text");
     const hashtags = t("result.share.hashtags");
 

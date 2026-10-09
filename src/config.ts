@@ -54,3 +54,26 @@ export async function postToGas(payload: Record<string, any>): Promise<any> {
   });
   return res.json();
 }
+
+// ============================================================
+// Xシェア用：Cloudflare Worker のシェアページ ベースURL
+// ------------------------------------------------------------
+// Worker を設置したら、ここにそのURLを入れる。
+//   例) "https://ikigai-share.xxxx.workers.dev"   （無料の *.workers.dev でOK）
+//   例) "https://share.ikigai-vision.com"          （独自ドメインを付けた場合）
+// 空のあいだは従来どおり Drive リンクでシェアする（挙動は変わらない）。
+// ============================================================
+export const SHARE_BASE_URL = "";
+
+// drivePageUrl（https://drive.google.com/file/d/FILEID/view...）から FILEID を取り出す
+export function extractDriveFileId(driveUrl: string): string {
+  const m = (driveUrl || "").match(/\/d\/([a-zA-Z0-9_-]+)/);
+  return m ? m[1] : "";
+}
+
+// Xシェアに使うURL：Worker設定時は OGP付きシェアページ、未設定時は Drive リンク
+export function buildShareUrl(drivePageUrl: string): string {
+  const id = extractDriveFileId(drivePageUrl);
+  if (SHARE_BASE_URL && id) return SHARE_BASE_URL + "/s?id=" + id;
+  return drivePageUrl || "";
+}
